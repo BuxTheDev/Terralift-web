@@ -34,7 +34,7 @@
 
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:'Geist',sans-serif;background:var(--bone);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:58px}
+body{font-family:'Geist',sans-serif;background:var(--bone);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:68px}
 img,svg{display:block;max-width:100%}
 em{font-style:normal}
 a{text-decoration:none}
@@ -47,11 +47,11 @@ button{font-family:inherit;cursor:pointer;border:none}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
 /* ── HEADER ── */
-header{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:58px;background:rgba(246,243,238,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
-.logo{display:flex;align-items:center;gap:9px}
-.logo-mark{width:28px;height:28px;flex-shrink:0}
-.logo-mark svg{width:28px;height:28px}
-.logo-name{font-family:'Fraunces',serif;font-size:19px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+header{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:68px;background:rgba(246,243,238,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{width:36px;height:36px;flex-shrink:0}
+.logo-mark svg{width:36px;height:36px}
+.logo-name{font-family:'Fraunces',serif;font-size:24px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
 .logo-name span{color:var(--forest)}
 .desktop-nav{display:none}
 .header-cta{display:flex;align-items:center;gap:6px;padding:9px 16px;background:var(--forest);color:#fff;font-size:13px;font-weight:600;border-radius:6px;box-shadow:0 1px 4px var(--forest-glow);transition:all .15s;-webkit-tap-highlight-color:transparent}
@@ -291,8 +291,8 @@ footer{background:var(--ink);padding:40px 20px 100px}
    DESKTOP  1024px+
 ══════════════════════════════ */
 @media(min-width:1024px){
-  body{padding-top:64px}
-  header{padding:0 52px;height:64px}
+  body{padding-top:68px}
+  header{padding:0 52px;height:68px}
   .desktop-nav{display:flex;align-items:center;gap:2px}
   .desktop-nav a{font-size:13px;font-weight:400;color:var(--muted);padding:8px 16px;border-radius:6px;transition:all .15s;letter-spacing:-.01em}
   .desktop-nav a:hover{color:var(--ink);background:var(--forest-dim)}
@@ -954,8 +954,8 @@ footer{background:var(--ink);padding:40px 20px 100px}
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 TerraLift LLC. All rights reserved.</p>
-    <p>Privacy Policy · Terms of Service</p>
+    <p>© 2026 TerraLift LLC. All rights reserved. · 30 N Gould St Ste R, Sheridan, WY 82801 · <a href="mailto:offers@terralift.com" style="color:rgba(255,255,255,.35);text-decoration:none;">offers@terralift.com</a> · (626) 736-5504</p>
+    <p><a href="/privacy.html" style="color:rgba(255,255,255,.35);text-decoration:none;">Privacy Policy</a> · <a href="/terms.html" style="color:rgba(255,255,255,.35);text-decoration:none;">Terms of Service</a></p>
   </div>
 </footer>
 
