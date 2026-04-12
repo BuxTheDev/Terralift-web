@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block any future admin or form processing paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.netlify/
+
+# Sitemap location
+Sitemap: https://terraliftoffers.com/sitemap.xml

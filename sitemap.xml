@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://terraliftoffers.com/</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Contact page -->
+  <url>
+    <loc>https://terraliftoffers.com/contact</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal -->
+  <url>
+    <loc>https://terraliftoffers.com/privacy</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://terraliftoffers.com/terms</loc>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!--
+    ADD THESE AS YOU BUILD THEM:
+
+    State landing pages (priority 0.9):
+    <url>
+      <loc>https://terraliftoffers.com/sell-land-arizona</loc>
+      <lastmod>2026-04-11</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>https://terraliftoffers.com/sell-land-texas</loc>
+      ...
+    </url>
+    <url>
+      <loc>https://terraliftoffers.com/sell-land-new-mexico</loc>
+      ...
+    </url>
+    <url>
+      <loc>https://terraliftoffers.com/sell-land-colorado</loc>
+      ...
+    </url>
+
+    County pages (priority 0.8):
+    <url>
+      <loc>https://terraliftoffers.com/sell-land-yavapai-county-arizona</loc>
+      ...
+    </url>
+
+    Blog articles (priority 0.7):
+    <url>
+      <loc>https://terraliftoffers.com/blog/how-to-sell-inherited-land</loc>
+      ...
+    </url>
+    <url>
+      <loc>https://terraliftoffers.com/blog/sell-land-with-back-taxes</loc>
+      ...
+    </url>
+  -->
+
+</urlset>
