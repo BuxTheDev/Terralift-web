@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TerraLift — Get a Fair Cash Offer on Your Land in 48 Hours</title>
+<meta name="description" content="TerraLift buys land nationwide with cash offers in 48 hours. No agents, no commissions, no waiting. Any land, any condition, all 50 states.">
+<meta property="og:title" content="TerraLift — Cash Offers on Land in 48 Hours">
+<meta property="og:description" content="No agents. No fees. No waiting. We buy land in all 50 states and close in as little as 14 days.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232F5D50'/><path d='M7 22 L16 10 L25 22' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='16' cy='24' r='2' fill='%23B88A44'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:        #1E2320;
+  --forest:     #2F5D50;
+  --forest-mid: #3a7262;
+  --forest-dim: rgba(47,93,80,0.10);
+  --forest-glow:rgba(47,93,80,0.22);
+  --sage:       #8FAE9D;
+  --sage-dim:   rgba(143,174,157,0.15);
+  --sage-border:rgba(143,174,157,0.30);
+  --sand:       #D8CBB8;
+  --sand-light: #e8dfd2;
+  --gold:       #B88A44;
+  --bone:       #F6F3EE;
+  --white:      #ffffff;
+  --muted:      #6b7a70;
+  --border:     rgba(30,35,32,0.08);
+  --border-f:   rgba(47,93,80,0.18);
+  --red:        #c0674a;
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Geist',sans-serif;background:var(--bone);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:68px}
+img,svg{display:block;max-width:100%}
+em{font-style:normal}
+a{text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none}
+
+@keyframes fade-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ping{0%{transform:scale(1);opacity:.7}70%{transform:scale(2.6);opacity:0}100%{transform:scale(1);opacity:0}}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* ── HEADER ── */
+header{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:68px;background:rgba(246,243,238,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{width:36px;height:36px;flex-shrink:0}
+.logo-mark svg{width:36px;height:36px}
+.logo-name{font-family:'Fraunces',serif;font-size:24px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.logo-name span{color:var(--forest)}
+.desktop-nav{display:none}
+.header-cta{display:flex;align-items:center;gap:6px;padding:9px 16px;background:var(--forest);color:#fff;font-size:13px;font-weight:600;border-radius:6px;box-shadow:0 1px 4px var(--forest-glow);transition:all .15s;-webkit-tap-highlight-color:transparent}
+.header-cta:active{background:var(--forest-mid)}
+
+/* ── HERO ── */
+.hero{padding:40px 20px 48px;background:var(--bone);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 90% 0%,rgba(47,93,80,.06) 0%,transparent 60%);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:20px;animation:fade-up .5s ease both}
+.eyebrow-line{width:20px;height:1px;background:var(--forest);opacity:.6;flex-shrink:0}
+.eyebrow-text{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--forest)}
+h1{font-family:'Fraunces',serif;font-size:clamp(40px,10vw,60px);font-weight:700;line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin-bottom:16px;animation:fade-up .5s .07s ease both}
+h1 em{color:var(--forest)}
+.hero-sub{font-size:15px;line-height:1.75;color:var(--muted);margin-bottom:28px;letter-spacing:-.01em;animation:fade-up .5s .14s ease both}
+.hero-sub strong{color:var(--ink);font-weight:500}
+.stat-strip{display:flex;margin-bottom:28px;border:1px solid var(--border);border-radius:8px;background:#fff;overflow:hidden;box-shadow:0 1px 4px rgba(30,35,32,.06);animation:fade-up .5s .21s ease both}
+.sstat{flex:1;padding:12px 10px;border-right:1px solid var(--border);text-align:center}
+.sstat:last-child{border-right:none}
+.sstat .v{font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:var(--ink);display:block;line-height:1;letter-spacing:-.02em}
+.sstat .l{font-size:10px;font-weight:500;color:var(--muted);margin-top:3px;display:block}
+.btn-main{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:16px 24px;background:var(--forest);color:#fff;font-size:15px;font-weight:600;letter-spacing:-.01em;border-radius:8px;box-shadow:0 2px 10px var(--forest-glow);transition:all .15s;animation:fade-up .5s .28s ease both;-webkit-tap-highlight-color:transparent}
+.btn-main:active{background:var(--forest-mid);transform:scale(.99)}
+.btn-main svg{flex-shrink:0}
+.trust-notes{display:flex;flex-direction:column;gap:6px;margin-top:14px;animation:fade-up .5s .35s ease both}
+.trust-note{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:7px;letter-spacing:-.01em}
+.trust-note::before{content:'✓';color:var(--forest);font-size:12px;font-weight:700;flex-shrink:0}
+.hero-right{display:none}
+
+/* ── TICKER ── */
+.ticker-bar{background:var(--ink);padding:10px 0;overflow:hidden;position:relative}
+.ticker-bar::before,.ticker-bar::after{content:'';position:absolute;top:0;bottom:0;width:48px;z-index:2;pointer-events:none}
+.ticker-bar::before{left:0;background:linear-gradient(90deg,var(--ink),transparent)}
+.ticker-bar::after{right:0;background:linear-gradient(270deg,var(--ink),transparent)}
+.ticker-inner{display:flex;white-space:nowrap;animation:ticker 26s linear infinite}
+.tk{display:inline-flex;align-items:center;gap:7px;padding:0 22px;font-size:12px;color:rgba(255,255,255,.45);border-right:1px solid rgba(255,255,255,.08);letter-spacing:-.01em}
+.tk .dot{width:4px;height:4px;background:var(--sage);border-radius:50%;flex-shrink:0}
+.tk.hi{color:var(--sage)}
+
+/* ── SHARED SECTION ── */
+section{padding:56px 20px;position:relative}
+.s-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.s-label::before{content:'';width:16px;height:1px;background:var(--forest);opacity:.5;flex-shrink:0}
+h2{font-family:'Fraunces',serif;font-size:clamp(30px,8vw,48px);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:12px}
+h2 em{color:var(--forest)}
+h2 .gold-em{color:var(--gold)}
+h2 .plain-em{color:var(--ink)}
+
+/* ── PAIN ── */
+.pain-section{background:var(--sand)}
+.pain-intro{margin-bottom:28px}
+.pain-intro p{font-size:15px;line-height:1.78;color:var(--muted);margin-bottom:12px;letter-spacing:-.01em}
+.pain-intro strong{color:var(--ink);font-weight:500}
+.pain-list{display:flex;flex-direction:column;gap:3px}
+.pain-card{display:flex;gap:13px;align-items:flex-start;padding:16px 18px;background:rgba(255,255,255,.75);border:1px solid rgba(30,35,32,.08);border-left:2px solid var(--red);border-radius:2px;transition:border-left-color .18s}
+.pain-card:active{border-left-color:var(--forest)}
+.pain-ico{width:32px;height:32px;background:rgba(192,103,74,.08);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.pain-card h4{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:3px;letter-spacing:-.01em}
+.pain-card p{font-size:13px;line-height:1.6;color:var(--muted);letter-spacing:-.01em}
+
+/* ── PROOF BAR ── */
+.proof-bar{background:var(--forest);padding:28px 20px;display:grid;grid-template-columns:1fr 1fr;gap:24px 16px}
+.ps{text-align:center}
+.ps .n{font-family:'Fraunces',serif;font-size:36px;font-weight:700;color:#fff;display:block;line-height:1;letter-spacing:-.03em}
+.ps .l{font-size:11px;font-weight:500;color:rgba(255,255,255,.55);margin-top:4px;display:block;letter-spacing:-.01em}
+.pdiv{display:none}
+
+/* ── FEATURES ── */
+.features-section{background:var(--bone)}
+.features-header{margin-bottom:28px}
+.features-header p{font-size:15px;line-height:1.75;color:var(--muted);margin-top:10px;letter-spacing:-.01em}
+.features-grid{display:flex;flex-direction:column;gap:2px}
+.fc{padding:22px 20px;background:#fff;border:1px solid var(--border);border-radius:2px;position:relative;overflow:hidden;transition:box-shadow .2s}
+.fc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--forest);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.fc-ico{width:38px;height:38px;background:var(--forest-dim);border:1px solid rgba(47,93,80,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:14px}
+.fc h3{font-size:14px;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:6px}
+.fc p{font-size:13px;line-height:1.65;color:var(--muted);letter-spacing:-.01em}
+
+/* ── COMPARE ── */
+.compare-section{background:var(--sand-light)}
+.compare-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:28px}
+.compare-table{width:100%;min-width:520px;border-collapse:collapse;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(30,35,32,.06)}
+.compare-table th{padding:12px 16px;text-align:left;background:var(--bone);border-bottom:1px solid var(--border);font-size:11px;font-weight:600;color:var(--muted);white-space:nowrap}
+.compare-table th.us{color:var(--forest)}
+.compare-table td{padding:11px 16px;border-bottom:1px solid rgba(30,35,32,.05);font-size:12px;color:var(--muted);letter-spacing:-.01em}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table td.feat{color:var(--ink);font-weight:500}
+.compare-table td:nth-child(2),.compare-table th:nth-child(2){background:rgba(47,93,80,.04);border-left:1px solid rgba(47,93,80,.12);border-right:1px solid rgba(47,93,80,.12)}
+.yes{color:var(--forest);font-weight:600}
+.no{color:var(--red)}
+.maybe{color:var(--muted)}
+
+/* ── WHO / FAQ ── */
+.who-section{background:var(--bone)}
+.who-intro{margin-bottom:36px}
+.who-intro p{font-size:15px;line-height:1.78;color:var(--muted);margin-bottom:16px;letter-spacing:-.01em}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.ltag{font-size:12px;padding:5px 12px;background:transparent;border:1px solid var(--border);border-radius:100px;color:var(--muted);letter-spacing:-.01em}
+.ltag.on{background:var(--forest-dim);border-color:rgba(47,93,80,.25);color:var(--forest);font-weight:500}
+.faq-list{display:flex;flex-direction:column;gap:2px}
+.faq-item{background:#fff;border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .2s}
+.faq-item.open{border-color:var(--border-f)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;min-height:56px}
+.faq-q h4{font-size:14px;font-weight:400;color:var(--ink);line-height:1.4;letter-spacing:-.01em}
+.faq-t{width:24px;height:24px;background:var(--bone);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--muted);flex-shrink:0;transition:all .2s;line-height:1}
+.faq-item.open .faq-t{background:var(--forest-dim);border-color:rgba(47,93,80,.25);color:var(--forest)}
+.faq-a{font-size:14px;line-height:1.75;color:var(--muted);max-height:0;overflow:hidden;transition:max-height .35s ease,padding .2s;letter-spacing:-.01em}
+.faq-item.open .faq-a{max-height:240px;padding:0 18px 16px}
+
+/* ── ABOUT / TRUST ── */
+.about-section{background:var(--bone)}
+.about-inner{margin-bottom:28px}
+.about-lead{font-size:15px;line-height:1.80;color:var(--muted);margin-top:14px;letter-spacing:-.01em}
+.trust-pillars{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-bottom:28px}
+.trust-pillar{padding:22px 20px;background:#fff;border:1px solid var(--border);border-radius:2px}
+.tp-icon{font-size:22px;margin-bottom:12px;display:block}
+.trust-pillar h4{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:7px;letter-spacing:-.01em}
+.trust-pillar p{font-size:13px;line-height:1.65;color:var(--muted);letter-spacing:-.01em}
+.contact-strip{display:flex;flex-direction:column;gap:16px;padding:24px 20px;background:var(--forest);border-radius:8px}
+.cs-div{display:none}
+.cs-item{display:flex;flex-direction:column;gap:3px}
+.cs-label{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.cs-value{font-size:16px;font-weight:600;color:#fff;letter-spacing:-.01em}
+a.cs-value:hover{color:var(--sand)}
+
+/* ── STATES ── */
+.states-section{background:var(--sand)}
+.states-sub{font-size:15px;line-height:1.75;color:var(--muted);margin-top:10px;margin-bottom:28px;letter-spacing:-.01em}
+.states-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.state-card{padding:20px 18px;background:#fff;border:1px solid var(--border);border-radius:2px;transition:all .18s}
+.state-card.active{border-top:2px solid var(--forest)}
+.state-card.more{border-top:2px solid var(--gold);background:var(--bone);display:flex;flex-direction:column;gap:6px}
+.sc-flag{font-size:20px;margin-bottom:8px}
+.sc-name{font-size:14px;font-weight:700;color:var(--ink);letter-spacing:-.01em;margin-bottom:3px}
+.sc-detail{font-size:12px;color:var(--muted);letter-spacing:-.01em;line-height:1.5}
+.sc-badge{display:inline-block;margin-top:10px;padding:3px 9px;border-radius:100px;font-size:10px;font-weight:600;background:var(--forest-dim);color:var(--forest);border:1px solid rgba(47,93,80,.2)}
+.state-card.active .sc-badge{background:var(--forest);color:#fff;border-color:var(--forest)}
+.sc-cta{display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:9px 16px;background:var(--gold);color:#fff;font-size:12px;font-weight:600;border-radius:6px;width:fit-content;transition:all .15s;-webkit-tap-highlight-color:transparent}
+.sc-cta:active{background:#c9993a}
+
+/* ── TESTIMONIALS ── */
+.testimonials-section{background:var(--sand-light)}
+.testimonials-section h2{margin-bottom:28px}
+.t-grid{display:flex;flex-direction:column;gap:3px}
+.tcard{background:#fff;border:1px solid rgba(30,35,32,.08);border-radius:8px;padding:22px}
+.t-stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:12px}
+.tcard p{font-family:'Fraunces',serif;font-size:15px;line-height:1.7;color:var(--ink);font-weight:400;margin-bottom:18px;opacity:.85}
+.t-author{display:flex;align-items:center;gap:10px;padding-top:14px;border-top:1px solid var(--border)}
+.t-av{width:36px;height:36px;background:var(--forest-dim);border:1px solid rgba(47,93,80,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--forest);flex-shrink:0}
+.t-name{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+.t-loc{font-size:11px;color:var(--muted);margin-top:1px}
+
+/* ── HOW IT WORKS ── */
+.how-section{background:var(--bone)}
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:28px}
+.how-step{padding:22px 18px;background:#fff;border:1px solid var(--border);border-radius:2px;position:relative;overflow:hidden}
+.how-step::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--forest),var(--sage));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.step-num{font-family:'Fraunces',serif;font-size:40px;font-weight:700;color:rgba(30,35,32,.05);line-height:1;margin-bottom:10px;letter-spacing:-.03em}
+.step-ico{font-size:20px;margin-bottom:10px;display:block}
+.how-step h3{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:6px}
+.how-step p{font-size:12px;line-height:1.62;color:var(--muted);letter-spacing:-.01em}
+.time-chip{display:inline-block;margin-top:12px;padding:3px 9px;background:var(--forest-dim);border:1px solid rgba(47,93,80,.2);border-radius:100px;font-size:10px;font-weight:500;color:var(--forest)}
+
+/* ── CALLOUT BAND ── */
+.callout-band{background:var(--ink);padding:48px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+.callout-band h3{font-family:'Fraunces',serif;font-size:clamp(24px,7vw,32px);font-weight:700;color:#fff;letter-spacing:-.02em;line-height:1.18}
+.callout-band h3 em{color:var(--gold)}
+.callout-band p{font-size:15px;color:rgba(255,255,255,.5);line-height:1.7;letter-spacing:-.01em}
+.btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;background:var(--gold);color:#fff;font-size:14px;font-weight:600;letter-spacing:-.01em;border-radius:8px;box-shadow:0 2px 8px rgba(184,138,68,.3);transition:all .15s;width:100%;-webkit-tap-highlight-color:transparent}
+.btn-gold:active{background:#c9993a;transform:scale(.99)}
+
+/* ── CTA FORM ── */
+.cta-section{background:var(--bone);padding:56px 20px 100px}
+.cta-section .s-label{margin-bottom:10px}
+.cta-section h2{margin-bottom:10px}
+.cta-section > p{font-size:15px;color:var(--muted);line-height:1.75;letter-spacing:-.01em;margin-bottom:32px}
+.cta-form{display:flex;flex-direction:column;gap:10px}
+.form-row{display:flex;flex-direction:column;gap:10px}
+.f-field{display:flex;flex-direction:column;gap:5px}
+.f-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.f-input{width:100%;padding:14px 15px;background:#fff;border:1px solid var(--border);border-radius:8px;font-family:'Geist',sans-serif;font-size:16px;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;box-shadow:0 1px 3px rgba(30,35,32,.04)}
+.f-input::placeholder{color:rgba(107,122,112,.45)}
+.f-input:focus{border-color:var(--forest);box-shadow:0 0 0 3px rgba(47,93,80,.08)}
+.f-submit{width:100%;padding:16px 24px;background:var(--forest);border-radius:8px;font-family:'Geist',sans-serif;font-size:15px;font-weight:600;letter-spacing:-.01em;color:#fff;box-shadow:0 2px 8px var(--forest-glow);transition:all .15s;margin-top:4px;-webkit-tap-highlight-color:transparent}
+.f-submit:active{background:var(--forest-mid);transform:scale(.99)}
+.f-note{font-size:12px;color:var(--muted);text-align:center;line-height:1.6;display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:4px}
+.f-note span{display:flex;align-items:center;gap:5px}
+.f-note span::before{content:'✓';color:var(--forest);font-size:11px;font-weight:700}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);padding:40px 20px 100px}
+.footer-top{display:flex;flex-direction:column;gap:32px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:20px}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.35);max-width:260px;line-height:1.65;margin-top:12px;letter-spacing:-.01em}
+.footer-links-row{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.footer-col h5{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:12px;opacity:.85}
+.footer-col a{display:flex;align-items:center;font-size:13px;color:rgba(255,255,255,.35);margin-bottom:9px;letter-spacing:-.01em;transition:color .15s;min-height:32px;-webkit-tap-highlight-color:transparent}
+.footer-col a:active{color:rgba(255,255,255,.7)}
+.footer-bottom{display:flex;flex-direction:column;gap:6px}
+.footer-bottom p{font-size:11px;color:rgba(255,255,255,.2);letter-spacing:-.01em}
+.footer-logo .logo-name{color:#fff}
+.footer-logo .logo-name span{color:var(--sage)}
+
+/* ── STICKY ── */
+.sticky{position:fixed;bottom:0;left:0;right:0;background:var(--bone);border-top:1px solid var(--border);padding:10px 16px;z-index:400;box-shadow:0 -4px 20px rgba(30,35,32,.07)}
+.sticky a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;background:var(--forest);border-radius:8px;font-size:14px;font-weight:600;color:#fff;letter-spacing:-.01em;box-shadow:0 2px 8px var(--forest-glow);-webkit-tap-highlight-color:transparent}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ══════════════════════════════
+   TABLET  640px+
+══════════════════════════════ */
+@media(min-width:640px){
+  section{padding:72px 36px}
+  .hero{padding:48px 36px 60px}
+  h1{font-size:clamp(48px,8vw,68px)}
+  .proof-bar{grid-template-columns:repeat(5,1fr);padding:36px}
+  .how-grid{grid-template-columns:repeat(4,1fr)}
+  .cta-section{padding:72px 36px 100px}
+  .form-row{flex-direction:row}
+  .f-note{flex-direction:row;gap:16px}
+  .callout-band{flex-direction:row;align-items:center;justify-content:space-between;padding:52px 36px}
+  .btn-gold{width:auto}
+  .features-grid{display:grid;grid-template-columns:1fr 1fr}
+  .t-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+  .trust-pillars{grid-template-columns:repeat(4,1fr)}
+  .states-grid{grid-template-columns:repeat(4,1fr)}
+  .footer-top{flex-direction:row;flex-wrap:wrap}
+  .footer-links-row{grid-template-columns:repeat(3,1fr)}
+  .contact-strip{flex-direction:row;align-items:center;justify-content:space-around;padding:28px 36px;border-radius:10px}
+  .cs-div{display:block;width:1px;height:40px;background:rgba(255,255,255,.15)}
+  .cs-item{align-items:center}
+  .cs-value{font-size:18px}
+}
+
+/* ══════════════════════════════
+   DESKTOP  1024px+
+══════════════════════════════ */
+@media(min-width:1024px){
+  body{padding-top:68px}
+  header{padding:0 52px;height:68px}
+  .desktop-nav{display:flex;align-items:center;gap:2px}
+  .desktop-nav a{font-size:13px;font-weight:400;color:var(--muted);padding:8px 16px;border-radius:6px;transition:all .15s;letter-spacing:-.01em}
+  .desktop-nav a:hover{color:var(--ink);background:var(--forest-dim)}
+  .desktop-nav .nav-cta{display:flex;align-items:center;gap:7px;padding:9px 20px;background:var(--forest);color:#fff;font-weight:600;border-radius:6px;margin-left:8px;box-shadow:0 1px 3px rgba(47,93,80,.3);font-size:13px;transition:all .15s}
+  .desktop-nav .nav-cta:hover{background:var(--forest-mid);transform:translateY(-1px)}
+  .header-cta{display:none}
+
+  .hero{padding:0;min-height:calc(100vh - 94px);display:grid;grid-template-columns:1fr 1fr}
+  .hero-left{padding:80px 48px 80px 72px;display:flex;flex-direction:column;justify-content:center}
+  h1{font-size:clamp(52px,5.5vw,78px)}
+  .btn-main{display:inline-flex;width:auto;padding:14px 26px;justify-content:flex-start}
+  .btn-main:hover{background:var(--forest-mid);transform:translateY(-1px);box-shadow:0 6px 20px rgba(47,93,80,.3)}
+  .btn-main:hover svg{transform:translateX(3px)}
+  .trust-notes{flex-direction:row;flex-wrap:wrap;gap:16px}
+  .stat-strip{max-width:480px}
+  .sstat{padding:14px 18px;text-align:left}
+  .sstat .v{font-size:24px}
+
+  .hero-right{display:flex;align-items:center;justify-content:center;padding:80px 52px 80px 24px;position:relative;z-index:2}
+  .card-wrap{position:relative;width:420px}
+  .card-wrap::before{content:'';position:absolute;inset:0;background:var(--sand);border:1px solid var(--border);border-radius:14px;transform:rotate(2.5deg) translateY(10px);z-index:0}
+  .card-wrap::after{content:'';position:absolute;inset:0;background:var(--sand-light);border:1px solid var(--border);border-radius:14px;transform:rotate(-1deg) translateY(5px);z-index:1}
+  .main-card{position:relative;z-index:2;background:#fff;border:1px solid rgba(30,35,32,.10);border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(30,35,32,.12);animation:float 7s ease-in-out infinite}
+  .card-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--border);background:var(--bone)}
+  .card-title{font-size:12px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+  .live-pill{display:flex;align-items:center;gap:5px;padding:3px 9px;background:rgba(47,93,80,.08);border:1px solid rgba(47,93,80,.2);border-radius:100px;font-size:10px;font-weight:600;color:var(--forest)}
+  .live-dot{width:5px;height:5px;background:var(--forest);border-radius:50%;animation:blink 1.8s infinite}
+  .card-map-area{position:relative;height:170px;background:linear-gradient(160deg,var(--bone) 0%,var(--sand-light) 100%);overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .map-svg-el{width:80%;opacity:.15}
+  .map-pins{position:absolute;inset:0}
+  .pin{position:absolute;width:7px;height:7px;background:var(--forest);border-radius:50%;box-shadow:0 0 0 2px rgba(47,93,80,.2)}
+  .pin::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:1.5px solid var(--forest);animation:ping 2.5s ease-out infinite;opacity:.4}
+  .pin:nth-child(1){top:35%;left:18%}
+  .pin:nth-child(2){top:26%;left:52%;animation-delay:.6s}
+  .pin:nth-child(3){top:58%;left:40%;animation-delay:1.2s}
+  .pin:nth-child(4){top:42%;left:70%;animation-delay:.4s}
+  .pin:nth-child(5){top:66%;left:58%;animation-delay:1.7s}
+  .pin:nth-child(6){top:30%;left:30%;animation-delay:.9s}
+  .map-label{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:500;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  .card-offer{padding:18px 20px;border-bottom:1px solid var(--border)}
+  .offer-label{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .offer-detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .od{padding:10px 12px;background:var(--bone);border:1px solid var(--border);border-radius:7px}
+  .od .ok{font-size:10px;color:var(--muted);margin-bottom:3px}
+  .od .ov{font-size:13px;font-weight:600;color:var(--ink)}
+  .od.highlight{border-color:rgba(47,93,80,.2);background:var(--forest-dim)}
+  .od.highlight .ov{color:var(--forest)}
+  .card-feed{padding:14px 20px}
+  .feed-title{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .feed-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(30,35,32,.05)}
+  .feed-row:last-child{border-bottom:none}
+  .feed-ico{width:28px;height:28px;background:var(--forest-dim);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+  .feed-info{flex:1;min-width:0}
+  .feed-place{font-size:12px;font-weight:500;color:var(--ink);letter-spacing:-.01em}
+  .feed-detail{font-size:11px;color:var(--muted);margin-top:1px}
+  .feed-tag{font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;flex-shrink:0}
+  .feed-tag.sent{background:var(--forest-dim);color:var(--forest);border:1px solid rgba(47,93,80,.2)}
+  .feed-tag.closed{background:rgba(184,138,68,.10);color:var(--gold);border:1px solid rgba(184,138,68,.2)}
+  .feed-tag.review{background:var(--sage-dim);color:var(--sage);border:1px solid var(--sage-border)}
+
+  section{padding:96px 72px}
+  .pain-section{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .pain-intro{margin-bottom:0}
+  .pain-card:hover{border-left-color:var(--forest);transform:translateX(2px)}
+  .proof-bar{display:flex;align-items:center;justify-content:space-around;padding:40px 72px}
+  .pdiv{display:block;width:1px;height:52px;background:rgba(255,255,255,.15)}
+  .ps .n{font-size:44px}
+  .features-grid{grid-template-columns:repeat(3,1fr)}
+  .fc:hover{box-shadow:0 4px 20px rgba(30,35,32,.08)}
+  .fc:hover::before{transform:scaleX(1)}
+  .who-section{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:start}
+  .who-intro{margin-bottom:0}
+  .t-grid{grid-template-columns:repeat(3,1fr)}
+  .tcard:hover{box-shadow:0 8px 28px rgba(30,35,32,.1);transform:translateY(-2px)}
+  .how-step:hover::after{transform:scaleX(1)}
+  .how-step:hover{box-shadow:0 4px 16px rgba(30,35,32,.08)}
+  .trust-pillar:hover{box-shadow:0 4px 16px rgba(30,35,32,.07)}
+  .state-card:hover{box-shadow:0 4px 16px rgba(30,35,32,.08);transform:translateY(-2px)}
+  .callout-band{padding:56px 72px}
+  .cta-section{padding:110px 72px;text-align:center}
+  .cta-section > p{max-width:460px;margin-left:auto;margin-right:auto}
+  .cta-form{max-width:480px;margin:0 auto;text-align:left}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .f-note{flex-direction:row;justify-content:center}
+  footer{padding:52px 72px 28px}
+  .footer-top{flex-direction:row;flex-wrap:nowrap;gap:64px}
+  .footer-links-row{display:contents}
+  .footer-bottom{flex-direction:row;justify-content:space-between}
+  .footer-col a{display:block;min-height:auto}
+  .about-inner{margin-bottom:52px}
+  .sticky{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="#" class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 32 32" fill="none">
+        <rect x="1" y="1" width="30" height="30" rx="7" fill="none" stroke="#1E2320" stroke-width="1.2"/>
+        <path d="M7 22 L16 10 L25 22" stroke="#2F5D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M10 22 L16 14 L22 22" fill="rgba(47,93,80,0.15)"/>
+        <circle cx="16" cy="24.5" r="1.8" fill="#B88A44"/>
+      </svg>
+    </div>
+    <span class="logo-name">Terra<span>Lift</span></span>
+  </a>
+  <nav class="desktop-nav">
+    <a href="#how">How It Works</a>
+    <a href="#about">About</a>
+    <a href="#who">Who We Buy From</a>
+    <a href="#compare">Why TerraLift</a>
+    <a href="#offer" class="nav-cta">
+      Get My Offer
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </nav>
+  <a href="#offer" class="header-cta">
+    Get Offer
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">Nationwide Cash Land Buyers</span>
+    </div>
+    <h1>Your land.<br><em>Cash in hand.</em><br>In two weeks.</h1>
+    <p class="hero-sub">No realtors. No commissions. No waiting 12 months for a buyer who can't close. <strong>We make a written cash offer within 48 hours</strong> — anywhere in the country.</p>
+    <div class="stat-strip">
+      <div class="sstat"><span class="v">$42M+</span><span class="l">Paid out</span></div>
+      <div class="sstat"><span class="v">48 hrs</span><span class="l">To offer</span></div>
+      <div class="sstat"><span class="v">1,400+</span><span class="l">Deals closed</span></div>
+    </div>
+    <a href="#offer" class="btn-main">
+      Get My Free Offer
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <div class="trust-notes">
+      <span class="trust-note">No obligation, ever</span>
+      <span class="trust-note">We cover closing costs</span>
+      <span class="trust-note">Any land, any state</span>
+    </div>
+  </div>
+
+  <!-- Desktop dashboard card -->
+  <div class="hero-right">
+    <div class="card-wrap">
+      <div class="main-card">
+        <div class="card-header">
+          <span class="card-title">Acquisition Dashboard</span>
+          <div class="live-pill"><div class="live-dot"></div>Active — All 50 States</div>
+        </div>
+        <div class="card-map-area">
+          <svg class="map-svg-el" viewBox="0 0 800 480" fill="none">
+            <path d="M130,180 L85,158 L62,118 L105,96 L148,76 L210,64 L275,54 L338,48 L410,44 L488,50 L565,62 L625,78 L672,98 L705,130 L722,162 L714,202 L692,234 L660,262 L618,282 L578,304 L536,324 L494,344 L452,362 L410,376 L368,382 L326,376 L284,360 L244,340 L206,316 L172,290 L148,258 L132,224 Z" fill="#2F5D50" stroke="rgba(47,93,80,0.3)" stroke-width="1"/>
+            <ellipse cx="178" cy="430" rx="30" ry="15" fill="#2F5D50" opacity="0.3"/>
+            <path d="M64,348 L94,336 L116,356 L106,378 L74,390 L54,374 Z" fill="#2F5D50" opacity="0.3"/>
+          </svg>
+          <div class="map-pins">
+            <div class="pin"></div><div class="pin"></div><div class="pin"></div>
+            <div class="pin"></div><div class="pin"></div><div class="pin"></div>
+          </div>
+          <div class="map-label">Active Acquisition Coverage</div>
+        </div>
+        <div class="card-offer">
+          <div class="offer-label">Latest — Texas Hill Country</div>
+          <div class="offer-detail-grid">
+            <div class="od highlight"><div class="ok">Status</div><div class="ov">Offer Sent</div></div>
+            <div class="od"><div class="ok">Time to Offer</div><div class="ov">31 hours</div></div>
+            <div class="od"><div class="ok">Seller Fees</div><div class="ov">$0.00</div></div>
+          </div>
+        </div>
+        <div class="card-feed">
+          <div class="feed-title">Recent Activity</div>
+          <div class="feed-row">
+            <div class="feed-ico">📍</div>
+            <div class="feed-info"><div class="feed-place">Arizona — Yavapai Co.</div><div class="feed-detail">8.5 acres · 2 hrs ago</div></div>
+            <span class="feed-tag sent">Offer Sent</span>
+          </div>
+          <div class="feed-row">
+            <div class="feed-ico">✅</div>
+            <div class="feed-info"><div class="feed-place">New Mexico — Sandoval</div><div class="feed-detail">2 lots · Yesterday</div></div>
+            <span class="feed-tag closed">Closed</span>
+          </div>
+          <div class="feed-row">
+            <div class="feed-ico">📋</div>
+            <div class="feed-info"><div class="feed-place">Colorado — Pueblo Co.</div><div class="feed-detail">12 acres · 4 hrs ago</div></div>
+            <span class="feed-tag review">Reviewing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    <div class="tk"><div class="dot"></div>Cash offers in 48 hours</div>
+    <div class="tk hi"><div class="dot"></div>Zero commissions</div>
+    <div class="tk"><div class="dot"></div>All 50 states active</div>
+    <div class="tk"><div class="dot"></div>Close in 14 days</div>
+    <div class="tk hi"><div class="dot"></div>No obligation, ever</div>
+    <div class="tk"><div class="dot"></div>Any land — any condition</div>
+    <div class="tk"><div class="dot"></div>We cover closing costs</div>
+    <div class="tk hi"><div class="dot"></div>1,400+ deals closed</div>
+    <div class="tk"><div class="dot"></div>Inherited land welcome</div>
+    <div class="tk"><div class="dot"></div>Tax delinquent? No problem</div>
+    <div class="tk"><div class="dot"></div>Cash offers in 48 hours</div>
+    <div class="tk hi"><div class="dot"></div>Zero commissions</div>
+    <div class="tk"><div class="dot"></div>All 50 states active</div>
+    <div class="tk"><div class="dot"></div>Close in 14 days</div>
+    <div class="tk hi"><div class="dot"></div>No obligation, ever</div>
+    <div class="tk"><div class="dot"></div>Any land — any condition</div>
+    <div class="tk"><div class="dot"></div>We cover closing costs</div>
+    <div class="tk hi"><div class="dot"></div>1,400+ deals closed</div>
+    <div class="tk"><div class="dot"></div>Inherited land welcome</div>
+    <div class="tk"><div class="dot"></div>Tax delinquent? No problem</div>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section class="pain-section" id="why">
+  <div class="pain-intro reveal">
+    <div class="s-label">The Problem</div>
+    <h2>Selling land through<br>a realtor is <em>broken.</em></h2>
+    <p>Most landowners think they have one option — list with an agent, wait 6–18 months, pay 6–8% in commissions, and hope a buyer's financing doesn't collapse at closing.</p>
+    <p>That system wasn't built for land sellers. <strong>We are.</strong></p>
+  </div>
+  <div class="pain-list reveal">
+    <div class="pain-card">
+      <div class="pain-ico">⏳</div>
+      <div>
+        <h4>Waiting 6–18 months with no guarantee</h4>
+        <p>Vacant land sits on the MLS 3–5× longer than homes. Most listings expire with zero offers while carrying costs pile up.</p>
+      </div>
+    </div>
+    <div class="pain-card">
+      <div class="pain-ico">💸</div>
+      <div>
+        <h4>Losing 6–8% before you see a dime</h4>
+        <p>Commissions, title fees, transfer taxes — you hand over thousands in costs before the proceeds ever reach you.</p>
+      </div>
+    </div>
+    <div class="pain-card">
+      <div class="pain-ico">🏦</div>
+      <div>
+        <h4>Buyers who can't get financed</h4>
+        <p>Banks barely lend on raw land. Most deals collapse because the buyer's loan falls through after months of your time.</p>
+      </div>
+    </div>
+    <div class="pain-card">
+      <div class="pain-ico">🗺️</div>
+      <div>
+        <h4>Carrying costs that bleed you every year</h4>
+        <p>Property taxes, HOA dues, liability insurance. Every year you hold unused land, you're paying for an asset doing nothing for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF BAR -->
+<div class="proof-bar">
+  <div class="ps"><span class="n">$42M+</span><span class="l">Paid to sellers</span></div>
+  <div class="pdiv"></div>
+  <div class="ps"><span class="n">1,400+</span><span class="l">Deals closed</span></div>
+  <div class="pdiv"></div>
+  <div class="ps"><span class="n">48 hrs</span><span class="l">Avg offer time</span></div>
+  <div class="pdiv"></div>
+  <div class="ps"><span class="n">All 50</span><span class="l">States active</span></div>
+  <div class="pdiv"></div>
+  <div class="ps"><span class="n">4.9 ★</span><span class="l">Seller rating</span></div>
+</div>
+
+<!-- FEATURES -->
+<section class="features-section" id="offer-details">
+  <div class="features-header reveal">
+    <div class="s-label">What You Get</div>
+    <h2>Our offer.<br><em>No strings attached.</em></h2>
+    <p>Here is exactly what working with TerraLift looks like — no hidden terms, no bait-and-switch, no last-minute surprises at the closing table.</p>
+  </div>
+  <div class="features-grid">
+    <div class="fc reveal">
+      <div class="fc-ico">⚡</div>
+      <h3>Cash offer within 48 hours</h3>
+      <p>Submit your parcel info and a real written offer lands in your inbox within 48 hours. No weeks of silence waiting to hear back.</p>
+    </div>
+    <div class="fc reveal">
+      <div class="fc-ico">🚫</div>
+      <h3>Zero fees or commissions</h3>
+      <p>No agents. No listing fees. No closing costs on your end. The number we offer is exactly what you receive — nothing deducted.</p>
+    </div>
+    <div class="fc reveal">
+      <div class="fc-ico">📋</div>
+      <h3>Simple, clean paperwork</h3>
+      <p>Straightforward contracts handled through a licensed, independent title company you can verify on your own before signing anything.</p>
+    </div>
+    <div class="fc reveal">
+      <div class="fc-ico">🏁</div>
+      <h3>Close in 14 days</h3>
+      <p>Accept the offer, sign the contract, close through title. Cash deposited in your bank account in 14–21 days. That's the whole process.</p>
+    </div>
+    <div class="fc reveal">
+      <div class="fc-ico">🗺️</div>
+      <h3>Any land, any condition</h3>
+      <p>Raw acreage, wooded lots, desert parcels, landlocked land, tax-delinquent, inherited — we buy regardless of condition or location.</p>
+    </div>
+    <div class="fc reveal">
+      <div class="fc-ico">🤝</div>
+      <h3>Zero obligation, always</h3>
+      <p>Get your offer. Review it with your family. Take your time. If it doesn't work for you, just say no. No pressure, no follow-up harassment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare-section" id="compare">
+  <div class="s-label reveal">Side by Side</div>
+  <h2 class="reveal">TerraLift vs.<br><span class="plain-em">the traditional route.</span></h2>
+  <div class="compare-scroll">
+    <table class="compare-table reveal">
+      <thead>
+        <tr>
+          <th style="width:34%"></th>
+          <th class="us">✦ TerraLift</th>
+          <th>Realtor</th>
+          <th>FSBO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="feat">Time to receive an offer</td><td><span class="yes">48 hours</span></td><td><span class="maybe">3–9 months</span></td><td><span class="maybe">Unknown</span></td></tr>
+        <tr><td class="feat">Commissions & fees</td><td><span class="yes">$0 — we cover it all</span></td><td><span class="no">6–8% of sale price</span></td><td><span class="maybe">Partial fees apply</span></td></tr>
+        <tr><td class="feat">Risk of deal collapsing</td><td><span class="yes">None — we're the buyer</span></td><td><span class="no">High — financing risk</span></td><td><span class="no">Very high</span></td></tr>
+        <tr><td class="feat">Time to close after offer</td><td><span class="yes">14–21 days</span></td><td><span class="maybe">30–90 days</span></td><td><span class="maybe">Unpredictable</span></td></tr>
+        <tr><td class="feat">Works for inherited / delinquent</td><td><span class="yes">Yes, always</span></td><td><span class="no">Rarely</span></td><td><span class="no">Rarely</span></td></tr>
+        <tr><td class="feat">Preparation required</td><td><span class="yes">Nothing — we buy as-is</span></td><td><span class="no">Survey, photos, cleanup</span></td><td><span class="no">All on you</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- WHO / FAQ -->
+<section class="who-section" id="who">
+  <div class="who-intro reveal">
+    <div class="s-label">Who We Work With</div>
+    <h2>We buy from<br><em>people like you.</em></h2>
+    <p>You don't need to be a developer or real estate investor. We work with everyday people who ended up with land they don't need anymore — for any reason at all.</p>
+    <div class="tag-cloud">
+      <span class="ltag on">Inherited land</span>
+      <span class="ltag">Vacant lots</span>
+      <span class="ltag on">Out-of-state owners</span>
+      <span class="ltag">Tax delinquent</span>
+      <span class="ltag on">Rural acreage</span>
+      <span class="ltag">Landlocked parcels</span>
+      <span class="ltag">Desert land</span>
+      <span class="ltag on">Estate / probate</span>
+      <span class="ltag">Timber land</span>
+    </div>
+    <p>Tired of paying property taxes on land you never visit? Settling an inherited estate? Just want to convert a forgotten asset into real money? We're ready to make you an offer today.</p>
+  </div>
+
+  <div class="faq-list reveal" id="faq">
+    <div class="s-label" style="margin-bottom:14px">Common Questions</div>
+    <div class="faq-item open">
+      <div class="faq-q" onclick="toggle(this)">
+        <h4>"Will your offer be way below market value?"</h4>
+        <div class="faq-t">−</div>
+      </div>
+      <div class="faq-a">Our offers are built on real county data and comparable sales for your specific parcel type. We need fair deals or our business model doesn't work. What we can't match is a full retail listing price after 12 months of waiting — but what we do offer is certainty, speed, and cash in hand today.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        <h4>"I inherited land without the deed — can you still buy it?"</h4>
+        <div class="faq-t">+</div>
+      </div>
+      <div class="faq-a">Yes. We handle estate situations all the time. Our team and title partners know how to navigate probate, missing documentation, and complex inheritance scenarios. Just send us the parcel details and we'll guide you through exactly what's needed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        <h4>"The land has years of back taxes — is it sellable?"</h4>
+        <div class="faq-t">+</div>
+      </div>
+      <div class="faq-a">Absolutely. We buy tax-delinquent land regularly. In most cases we absorb the back taxes as part of the transaction so you don't come out of pocket before closing. Submit the details and we'll tell you what we can do.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        <h4>"The land is landlocked — will anyone buy it?"</h4>
+        <div class="faq-t">+</div>
+      </div>
+      <div class="faq-a">We specifically look for parcels most buyers won't touch. Landlocked, difficult access, no utilities — we know how to work with all of these. It may affect the offer amount, but we'll still evaluate and respond with a number.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        <h4>"How is this different from listing with a realtor?"</h4>
+        <div class="faq-t">+</div>
+      </div>
+      <div class="faq-a">A realtor lists your land and waits for a buyer to appear — that takes 6–18 months and most land listings expire without selling. We are the buyer. No listing period, no commissions, no deal collapsing at the last minute because a buyer couldn't get financed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">
+        <h4>"Do I need to prepare or fix up the land first?"</h4>
+        <div class="faq-t">+</div>
+      </div>
+      <div class="faq-a">Nothing at all. We buy land exactly as-is. Don't clear it, don't clean it, don't spend a dollar on it. Just send us the parcel information and we'll handle everything from there.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / TRUST -->
+<section class="about-section" id="about">
+  <div class="about-inner reveal">
+    <div class="s-label">Who We Are</div>
+    <h2>Built by real estate people,<br><em>for land sellers.</em></h2>
+    <p class="about-lead">TerraLift was founded because we kept watching landowners lose years and thousands of dollars trying to sell through a system that was never designed for them. We're not a hedge fund or a faceless algorithm — we're a team of real estate operators who buy land, hold it, and sell it to developers and builders across the country. We've closed over 1,400 transactions and we know what a fair deal looks like for both sides.</p>
+  </div>
+
+  <div class="trust-pillars reveal">
+    <div class="trust-pillar">
+      <div class="tp-icon">🏛️</div>
+      <h4>Licensed & Transparent</h4>
+      <p>Every transaction closes through a licensed, independent title company in your state. You can verify everything independently before you sign a single thing.</p>
+    </div>
+    <div class="trust-pillar">
+      <div class="tp-icon">📞</div>
+      <h4>Real People, Real Calls</h4>
+      <p>When you submit your property, a real person from our acquisitions team reaches out within 24 hours — not a bot, not a drip sequence. We answer your questions directly.</p>
+    </div>
+    <div class="trust-pillar">
+      <div class="tp-icon">🤝</div>
+      <h4>No Pressure, Ever</h4>
+      <p>We make one fair offer based on real market data. If it doesn't work for you, we part ways with no hard feelings. No follow-up pressure campaigns, no manipulation.</p>
+    </div>
+    <div class="trust-pillar">
+      <div class="tp-icon">⚡</div>
+      <h4>We Move Fast Because We Can</h4>
+      <p>We buy with our own capital — no lenders, no committees, no approval chains. When we make an offer, we can close it. And we do it in two weeks.</p>
+    </div>
+  </div>
+
+  <div class="contact-strip reveal">
+    <div class="cs-item">
+      <span class="cs-label">Call or Text</span>
+      <a href="tel:+16267365504" class="cs-value">(626) 736-5504</a>
+    </div>
+    <div class="cs-div"></div>
+    <div class="cs-item">
+      <span class="cs-label">Email Us</span>
+      <a href="mailto:offers@terralift.com" class="cs-value">offers@terralift.com</a>
+    </div>
+    <div class="cs-div"></div>
+    <div class="cs-item">
+      <span class="cs-label">Response Time</span>
+      <span class="cs-value">Within 24 hours</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATES -->
+<section class="states-section">
+  <div class="reveal">
+    <div class="s-label">Where We Buy</div>
+    <h2>Active in <em>all 50 states.</em></h2>
+    <p class="states-sub">It doesn't matter where your land is — if it's in the US, we can make you an offer. Here are some of our most active markets right now.</p>
+  </div>
+  <div class="states-grid reveal">
+    <div class="state-card active">
+      <div class="sc-flag">🤠</div>
+      <div class="sc-name">Texas</div>
+      <div class="sc-detail">Hill Country · West Texas · Panhandle</div>
+      <div class="sc-badge">High Activity</div>
+    </div>
+    <div class="state-card active">
+      <div class="sc-flag">🌵</div>
+      <div class="sc-name">Arizona</div>
+      <div class="sc-detail">Yavapai · Mohave · Cochise · Pinal</div>
+      <div class="sc-badge">High Activity</div>
+    </div>
+    <div class="state-card active">
+      <div class="sc-flag">🏜️</div>
+      <div class="sc-name">New Mexico</div>
+      <div class="sc-detail">Sandoval · Socorro · Sierra · Luna</div>
+      <div class="sc-badge">High Activity</div>
+    </div>
+    <div class="state-card">
+      <div class="sc-flag">🏔️</div>
+      <div class="sc-name">Colorado</div>
+      <div class="sc-detail">Pueblo · Huerfano · Las Animas</div>
+      <div class="sc-badge">Active</div>
+    </div>
+    <div class="state-card">
+      <div class="sc-flag">🌾</div>
+      <div class="sc-name">Oklahoma</div>
+      <div class="sc-detail">Rural & Agricultural Counties</div>
+      <div class="sc-badge">Active</div>
+    </div>
+    <div class="state-card">
+      <div class="sc-flag">🌲</div>
+      <div class="sc-name">Tennessee</div>
+      <div class="sc-detail">Rural · Wooded · Agricultural</div>
+      <div class="sc-badge">Active</div>
+    </div>
+    <div class="state-card">
+      <div class="sc-flag">🌿</div>
+      <div class="sc-name">Georgia</div>
+      <div class="sc-detail">Rural Counties · Timber Land</div>
+      <div class="sc-badge">Active</div>
+    </div>
+    <div class="state-card more">
+      <div class="sc-flag">🗺️</div>
+      <div class="sc-name">+43 More States</div>
+      <div class="sc-detail">Submit your property and we'll tell you if we're actively buying in your county right now.</div>
+      <a href="#offer" class="sc-cta">Get My Offer →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="s-label reveal">Real Sellers, Real Results</div>
+  <h2 class="reveal">They didn't think<br>it would be <em>this simple.</em></h2>
+  <div class="t-grid">
+    <div class="tcard reveal">
+      <div class="t-stars">★★★★★</div>
+      <p>"I inherited 40 acres in rural Texas and had been paying taxes on it for 6 years without ever visiting. TerraLift had an offer in my inbox in 36 hours and we closed in 18 days. I finally stopped losing money on land I never used."</p>
+      <div class="t-author">
+        <div class="t-av">MR</div>
+        <div><div class="t-name">Marcus R.</div><div class="t-loc">Austin, TX — Sold 40 acres</div></div>
+      </div>
+    </div>
+    <div class="tcard reveal">
+      <div class="t-stars">★★★★★</div>
+      <p>"I tried listing with two different realtors over three years. Both listings expired with zero offers. A friend mentioned TerraLift and within two months the land was sold and the money was in my bank. I only wish I'd found them sooner."</p>
+      <div class="t-author">
+        <div class="t-av">DL</div>
+        <div><div class="t-name">Diane L.</div><div class="t-loc">Flagstaff, AZ — Sold 8.5 acres</div></div>
+      </div>
+    </div>
+    <div class="tcard reveal">
+      <div class="t-stars">★★★★★</div>
+      <p>"Four years of back taxes and I genuinely thought I was stuck with it. TerraLift bought it, covered the taxes, and I still walked away with money in my pocket. Transparent and professional from the first call to closing day."</p>
+      <div class="t-author">
+        <div class="t-av">JT</div>
+        <div><div class="t-name">James T.</div><div class="t-loc">Albuquerque, NM — Sold 2 lots</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+  <div class="s-label reveal">The Process</div>
+  <h2 class="reveal">Four steps to<br><em>closing day.</em></h2>
+  <div class="how-grid">
+    <div class="how-step reveal">
+      <div class="step-num">01</div>
+      <span class="step-ico">📝</span>
+      <h3>Tell us about your land</h3>
+      <p>Fill out our short form with your parcel details — county, state, acreage, and APN if you have it. Takes about 3 minutes.</p>
+      <span class="time-chip">~3 minutes</span>
+    </div>
+    <div class="how-step reveal">
+      <div class="step-num">02</div>
+      <span class="step-ico">🔍</span>
+      <h3>We research your parcel</h3>
+      <p>Our team pulls county records, comparable sales, and zoning data. No appraisal needed on your end — we do all the work.</p>
+      <span class="time-chip">24–48 hours</span>
+    </div>
+    <div class="how-step reveal">
+      <div class="step-num">03</div>
+      <span class="step-ico">💬</span>
+      <h3>Receive your cash offer</h3>
+      <p>A written, no-obligation offer arrives in your inbox. Review it, ask questions, talk to your family. Take as long as you need.</p>
+      <span class="time-chip">Your timeline</span>
+    </div>
+    <div class="how-step reveal">
+      <div class="step-num">04</div>
+      <span class="step-ico">✅</span>
+      <h3>Sign and get paid</h3>
+      <p>Accept the offer, sign the contract, and close through a licensed title company. Cash deposited in your account in 14–21 days.</p>
+      <span class="time-chip">14–21 days</span>
+    </div>
+  </div>
+</section>
+
+<!-- CALLOUT BAND -->
+<div class="callout-band">
+  <h3>Stop paying taxes on land<br>that's doing <em>nothing for you.</em></h3>
+  <p>Every year you hold it costs you real money. Get a free offer in 48 hours and find out what it's worth today.</p>
+  <a href="#offer" class="btn-gold">Get My Free Offer →</a>
+</div>
+
+<!-- CTA FORM -->
+<section class="cta-section" id="offer">
+  <div class="s-label">Get Started Today</div>
+  <h2>Ready to turn your<br>land into <em>cash?</em></h2>
+  <p>Tell us about your property and we'll have a real, written cash offer in your inbox within 48 hours. No obligation. No pressure. Takes 3 minutes.</p>
+  <div class="cta-form">
+    <div class="form-row">
+      <div class="f-field"><label class="f-label">First Name</label><input type="text" class="f-input" placeholder="John"></div>
+      <div class="f-field"><label class="f-label">Last Name</label><input type="text" class="f-input" placeholder="Smith"></div>
+    </div>
+    <div class="f-field"><label class="f-label">Email Address</label><input type="email" class="f-input" placeholder="john@email.com"></div>
+    <div class="f-field"><label class="f-label">Phone Number</label><input type="tel" class="f-input" placeholder="(602) 555-0100"></div>
+    <div class="form-row">
+      <div class="f-field"><label class="f-label">State</label><input type="text" class="f-input" placeholder="Arizona"></div>
+      <div class="f-field"><label class="f-label">County</label><input type="text" class="f-input" placeholder="Maricopa"></div>
+    </div>
+    <div class="f-field"><label class="f-label">Approximate Acreage</label><input type="text" class="f-input" placeholder="e.g. 5, 40, 200+"></div>
+    <div class="f-field">
+      <label class="f-label">Tell us anything else about the land (optional)</label>
+      <textarea class="f-input" rows="3" placeholder="e.g. inherited, has back taxes, landlocked, no access road..." style="resize:vertical;min-height:80px"></textarea>
+    </div>
+    <button class="f-submit" id="formSubmit">Get My Free Cash Offer →</button>
+    <p class="f-note">
+      <span>No commitment required</span>
+      <span>We cover all closing costs</span>
+      <span>Response within 24 hrs</span>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="logo footer-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 32 32" fill="none">
+            <rect x="1" y="1" width="30" height="30" rx="7" stroke="#8FAE9D" stroke-width="1.2" fill="rgba(143,174,157,0.08)"/>
+            <path d="M7 22 L16 10 L25 22" stroke="#8FAE9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="24.5" r="1.8" fill="#B88A44"/>
+          </svg>
+        </div>
+        <span class="logo-name">Terra<span>Lift</span></span>
+      </a>
+      <p>Cash buyers of land nationwide. Any size, any condition, any state. Zero fees to sellers — ever.</p>
+    </div>
+    <div class="footer-links-row">
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#about">About Us</a>
+        <a href="#how">How It Works</a>
+        <a href="#offer">Sell My Land</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="tel:+16267365504">(626) 736-5504</a>
+        <a href="mailto:offers@terralift.com">offers@terralift.com</a>
+        <a href="#offer">Submit Your Property</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 TerraLift LLC. All rights reserved. · 30 N Gould St Ste R, Sheridan, WY 82801 · <a href="mailto:offers@terralift.com" style="color:rgba(255,255,255,.35);text-decoration:none;">offers@terralift.com</a> · (626) 736-5504</p>
+    <p><a href="/privacy.html" style="color:rgba(255,255,255,.35);text-decoration:none;">Privacy Policy</a> · <a href="/terms.html" style="color:rgba(255,255,255,.35);text-decoration:none;">Terms of Service</a></p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky">
+  <a href="#offer">
+    Get My Free Cash Offer — 3 Minutes
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // FAQ accordion
+  function toggle(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-t').textContent = '+';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      el.querySelector('.faq-t').textContent = '−';
+    }
+  }
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+
+  // Stagger grid children
+  document.querySelectorAll('.features-grid, .t-grid, .how-grid, .pain-list, .trust-pillars, .states-grid').forEach(g => {
+    Array.from(g.children).forEach((c, i) => {
+      c.style.transitionDelay = i * 60 + 'ms';
+       });
+  });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Phone formatting
+  const phoneInput = document.querySelector('.f-input[type="tel"]');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', function() {
+      let v = this.value.replace(/\D/g, '').slice(0, 10);
+      if (v.length >= 7) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6);
+      else if (v.length >= 4) v = '(' + v.slice(0,3) + ') ' + v.slice(3);
+      else if (v.length > 0) v = '(' + v;
+      this.value = v;
+    });
+  }
+
+  // GHL Webhook form submission (via Netlify proxy function)
+  const submitBtn = document.getElementById('formSubmit');
+
+  if (submitBtn) {
+    submitBtn.addEventListener('click', async function() {
+      const form = submitBtn.closest('.cta-form');
+      const inputs = form.querySelectorAll('.f-input');
+      const [firstName, lastName, email, phone, state, county, acreage] = inputs;
+      const notes = form.querySelector('textarea');
+
+      // Basic validation
+      let valid = true;
+      [firstName, lastName, email, phone].forEach(f => {
+        f.style.borderColor = '';
+        if (!f.value.trim()) { f.style.borderColor = '#c0674a'; valid = false; }
+      });
+      if (!valid) {
+        firstName.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      submitBtn.textContent = 'Sending…';
+      submitBtn.disabled = true;
+
+      try {
+        const res = await fetch('/.netlify/functions/submit-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            firstName: firstName.value.trim(),
+            lastName: lastName.value.trim(),
+            email: email.value.trim(),
+            phone: phone.value.trim(),
+            state: state ? state.value.trim() : '',
+            county: county ? county.value.trim() : '',
+            acreage: acreage ? acreage.value.trim() : '',
+            message: notes ? notes.value.trim() : '',
+            source: 'TerraLift Landing Page'
+          })
+        });
+
+        if (!res.ok) throw new Error('Submission failed');
+
+      } catch(e) {
+        submitBtn.textContent = 'Get My Free Cash Offer →';
+        submitBtn.disabled = false;
+        alert('Something went wrong — please try again or call us at (626) 736-5504.');
+        return;
+      }
+
+      // Show success
+      const ctaSection = document.getElementById('offer');
+      ctaSection.innerHTML = `
+        <div style="text-align:center;padding:40px 20px;max-width:480px;margin:0 auto">
+          <div style="width:64px;height:64px;background:var(--forest);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;color:#fff">✓</div>
+          <h2 style="font-family:'Fraunces',serif;font-size:2rem;font-weight:700;color:var(--ink);margin-bottom:12px">Offer request received.</h2>
+          <p style="font-size:15px;color:var(--muted);line-height:1.75">Our acquisitions team will review your parcel and reach out within <strong style="color:var(--ink)">24–48 hours</strong> with a written cash offer. Check your email and phone.</p>
+        </div>`;
+    });
+  }
+</script>
+</body>
+</html>

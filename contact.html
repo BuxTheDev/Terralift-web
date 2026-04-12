@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact TerraLift — Chat With Our Team</title>
+<meta name="description" content="Chat with TerraLift's acquisitions team. We buy vacant land nationwide for cash. Get answers fast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:    #1E2320;
+  --forest: #2F5D50;
+  --sage:   #8FAE9D;
+  --sand:   #D8CBB8;
+  --bone:   #F6F3EE;
+  --muted:  #6b7a70;
+  --border: rgba(30,35,32,0.08);
+  --gold:   #B88A44;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Geist', sans-serif; background: var(--bone); color: var(--ink); min-height: 100vh; -webkit-font-smoothing: antialiased; padding-top: 68px; }
+a { text-decoration: none; }
+
+/* Header */
+header { position: fixed; top: 0; left: 0; right: 0; z-index: 500; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 68px; background: rgba(246,243,238,.96); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+.logo { display: flex; align-items: center; gap: 11px; }
+.logo-mark svg { width: 36px; height: 36px; }
+.logo-name { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 700; letter-spacing: -.01em; color: var(--ink); }
+.logo-name span { color: var(--forest); }
+.back-link { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: var(--muted); transition: color .15s; }
+.back-link:hover { color: var(--forest); }
+.back-link svg { width: 16px; height: 16px; }
+
+/* Hero */
+.hero {
+  padding: 72px 20px 80px;
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+}
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-bottom: 20px;
+}
+.eyebrow-line { width: 20px; height: 1px; background: var(--forest); opacity: .6; }
+.eyebrow-text { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--forest); }
+h1 { font-family: 'Fraunces', serif; font-size: clamp(36px, 8vw, 54px); font-weight: 700; line-height: 1.1; letter-spacing: -.02em; color: var(--ink); margin-bottom: 16px; }
+h1 em { color: var(--forest); font-style: normal; }
+.sub { font-size: 16px; line-height: 1.7; color: var(--muted); margin-bottom: 40px; }
+
+/* Info cards */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+@media(max-width:560px) { .info-grid { grid-template-columns: 1fr; } }
+.info-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.info-ico { font-size: 24px; margin-bottom: 10px; }
+.info-label { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.info-val { font-size: 14px; font-weight: 500; color: var(--ink); }
+.info-val a { color: var(--forest); }
+.info-val a:hover { text-decoration: underline; }
+
+/* Chat note */
+.chat-note {
+  max-width: 480px;
+  margin: 0 auto 32px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.chat-note strong { color: var(--ink); font-weight: 500; }
+
+/* CTA back */
+.back-cta {
+  text-align: center;
+  padding: 0 20px 80px;
+}
+.back-cta a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 24px;
+  background: var(--forest);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background .15s;
+}
+.back-cta a:hover { background: #3a7262; }
+
+/* Footer */
+footer {
+  background: var(--ink);
+  padding: 32px 20px;
+  text-align: center;
+}
+.footer-bottom p { font-size: 11px; color: rgba(255,255,255,.25); line-height: 1.8; }
+.footer-bottom a { color: rgba(255,255,255,.35); }
+.footer-bottom a:hover { color: rgba(255,255,255,.65); }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 32 32" fill="none">
+        <rect x="1" y="1" width="30" height="30" rx="7" fill="none" stroke="#1E2320" stroke-width="1.2"/>
+        <path d="M7 22 L16 10 L25 22" stroke="#2F5D50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M10 22 L16 14 L22 22" fill="rgba(47,93,80,0.15)"/>
+        <circle cx="16" cy="24.5" r="1.8" fill="#B88A44"/>
+      </svg>
+    </div>
+    <span class="logo-name">Terra<span>Lift</span></span>
+  </a>
+  <a href="/" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to site
+  </a>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">
+    <div class="eyebrow-line"></div>
+    <span class="eyebrow-text">Get in touch</span>
+    <div class="eyebrow-line"></div>
+  </div>
+  <h1>Talk to our<br><em>acquisitions team.</em></h1>
+  <p class="sub">Have a question about your land? Use the chat below to connect with a real person from our team — we respond within a few hours during business hours.</p>
+</section>
+
+<div class="info-grid">
+  <div class="info-card">
+    <div class="info-ico">📞</div>
+    <div class="info-label">Call or Text</div>
+    <div class="info-val"><a href="tel:+16267365504">(626) 736-5504</a></div>
+  </div>
+  <div class="info-card">
+    <div class="info-ico">📧</div>
+    <div class="info-label">Email</div>
+    <div class="info-val"><a href="mailto:offers@terralift.com">offers@terralift.com</a></div>
+  </div>
+  <div class="info-card">
+    <div class="info-ico">⏱</div>
+    <div class="info-label">Response Time</div>
+    <div class="info-val">Within 24 hours</div>
+  </div>
+</div>
+
+<div class="chat-note">
+  <strong>Use the chat widget in the bottom-right corner</strong> to start a conversation with our team right now. We're here to answer questions about your land, our process, or any offer you've received.
+</div>
+
+<div class="back-cta">
+  <a href="/#offer">
+    Ready to get a cash offer?
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-bottom">
+    <p>
+      © 2026 TerraLift LLC. All rights reserved.<br>
+      30 N Gould St Ste R, Sheridan, WY 82801 · <a href="tel:+16267365504">(626) 736-5504</a> · <a href="mailto:offers@terralift.com">offers@terralift.com</a><br>
+      <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a>
+    </p>
+  </div>
+</footer>
+
+<!-- GHL Chat Widget — A2P compliant: no phone-collecting forms on this page -->
+<script src="https://beta.leadconnectorhq.com/loader.js" data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69dae98c9f3b6fa4f398a97b"></script>
+
+</body>
+</html>
