@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Partners | TerraLift</title>
+<meta name="description" content="TerraLift partners with estate attorneys, probate counsel, and legal professionals to provide fast, reliable land liquidity assessments for non-performing estate assets.">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232F5D50'/><path d='M7 22 L16 10 L25 22' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='16' cy='24' r='2' fill='%23B88A44'/></svg>">
+<meta name="theme-color" content="#2F5D50">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink:         #1E2320;
+  --forest:      #2F5D50;
+  --forest-mid:  #3a7262;
+  --forest-dim:  rgba(47,93,80,0.10);
+  --forest-glow: rgba(47,93,80,0.22);
+  --sage:        #8FAE9D;
+  --sage-dim:    rgba(143,174,157,0.15);
+  --sage-border: rgba(143,174,157,0.30);
+  --sand:        #D8CBB8;
+  --sand-light:  #e8dfd2;
+  --gold:        #B88A44;
+  --gold-dim:    rgba(184,138,68,0.12);
+  --bone:        #F6F3EE;
+  --white:       #ffffff;
+  --muted:       #6b7a70;
+  --border:      rgba(30,35,32,0.08);
+  --border-f:    rgba(47,93,80,0.18);
+  --red:         #c0674a;
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Geist',sans-serif;background:var(--bone);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-top:68px}
+img,svg{display:block;max-width:100%}
+a{text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none}
+
+@keyframes fade-up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+@keyframes line-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* ── HEADER ── */
+header{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:68px;background:rgba(246,243,238,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{width:32px;height:32px;flex-shrink:0}
+.logo-name{font-family:'Fraunces',serif;font-size:22px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.logo-name span{color:var(--forest)}
+.pro-badge{display:inline-flex;align-items:center;padding:3px 9px;background:var(--gold-dim);border:1px solid rgba(184,138,68,.25);border-radius:100px;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);margin-left:4px}
+.header-right{display:flex;align-items:center;gap:10px}
+.header-phone{display:none;font-size:13px;font-weight:500;color:var(--muted);letter-spacing:-.01em}
+.header-cta-sm{display:flex;align-items:center;gap:6px;padding:9px 16px;background:var(--forest);color:#fff;font-size:13px;font-weight:600;border-radius:6px;transition:all .15s}
+.header-cta-sm:hover{background:var(--forest-mid)}
+
+/* ── HERO ── */
+.hero{padding:52px 20px 56px;background:var(--bone);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 100% 0%,rgba(47,93,80,.05) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 0% 100%,rgba(184,138,68,.04) 0%,transparent 55%);pointer-events:none}
+
+/* thin ruled line decoration */
+.hero-rule{width:40px;height:1px;background:var(--gold);margin-bottom:22px;animation:line-grow .6s ease both;transform-origin:left}
+
+.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;animation:fade-up .5s ease both}
+.eyebrow-line{width:20px;height:1px;background:var(--forest);opacity:.6;flex-shrink:0}
+.eyebrow-text{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--forest)}
+
+h1{font-family:'Fraunces',serif;font-size:clamp(36px,9vw,58px);font-weight:700;line-height:1.08;letter-spacing:-.025em;color:var(--ink);margin-bottom:18px;animation:fade-up .5s .07s ease both}
+h1 em{color:var(--forest);font-style:normal}
+h1 .gold{color:var(--gold)}
+
+.hero-sub{font-size:15px;line-height:1.8;color:var(--muted);margin-bottom:32px;letter-spacing:-.01em;max-width:540px;animation:fade-up .5s .14s ease both}
+.hero-sub strong{color:var(--ink);font-weight:500}
+
+.hero-cta-row{display:flex;flex-direction:column;gap:12px;animation:fade-up .5s .21s ease both}
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;background:var(--forest);color:#fff;font-size:14px;font-weight:600;letter-spacing:-.01em;border-radius:8px;box-shadow:0 2px 10px var(--forest-glow);transition:all .18s;width:100%}
+.btn-primary:hover{background:var(--forest-mid);transform:translateY(-1px);box-shadow:0 6px 20px rgba(47,93,80,.28)}
+.btn-primary svg{flex-shrink:0;transition:transform .18s}
+.btn-primary:hover svg{transform:translateX(3px)}
+
+.btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 26px;background:transparent;color:var(--forest);font-size:14px;font-weight:600;letter-spacing:-.01em;border-radius:8px;border:1.5px solid var(--sage-border);transition:all .18s;width:100%}
+.btn-secondary:hover{background:var(--forest-dim);border-color:var(--forest)}
+
+.credibility-strip{display:flex;align-items:center;gap:16px;margin-top:24px;animation:fade-up .5s .28s ease both}
+.cred-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);letter-spacing:-.01em}
+.cred-dot{width:3px;height:3px;background:var(--sage);border-radius:50%;flex-shrink:0}
+.cred-icon{color:var(--forest);flex-shrink:0}
+
+/* ── DIVIDER BAND ── */
+.divider-band{background:var(--ink);padding:18px 20px;overflow:hidden;position:relative}
+.divider-inner{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+.divider-item{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,.45);letter-spacing:.04em;text-transform:uppercase;font-weight:500}
+.divider-item .di-val{font-family:'Fraunces',serif;font-size:18px;font-weight:700;color:var(--sage);letter-spacing:-.02em;font-style:normal;text-transform:none}
+.di-sep{width:1px;height:28px;background:rgba(255,255,255,.1);flex-shrink:0}
+
+/* ── SHARED SECTION ── */
+section{padding:56px 20px;position:relative}
+.s-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.s-label::before{content:'';width:16px;height:1px;background:var(--forest);opacity:.5;flex-shrink:0}
+h2{font-family:'Fraunces',serif;font-size:clamp(28px,7vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.025em;color:var(--ink);margin-bottom:12px}
+h2 em{color:var(--forest);font-style:normal}
+h2 .gold-em{color:var(--gold)}
+
+/* ── VALUE PROP ── */
+.value-section{background:var(--bone)}
+.value-intro{font-size:15px;line-height:1.8;color:var(--muted);max-width:580px;margin-bottom:36px;letter-spacing:-.01em}
+.value-intro strong{color:var(--ink);font-weight:500}
+
+.value-grid{display:flex;flex-direction:column;gap:2px}
+.value-card{display:flex;gap:18px;align-items:flex-start;padding:20px;background:#fff;border:1px solid var(--border);border-left:3px solid var(--forest);border-radius:2px;transition:border-left-color .2s,box-shadow .2s}
+.value-card:hover{border-left-color:var(--gold);box-shadow:0 2px 16px rgba(30,35,32,.06)}
+.vc-icon{width:40px;height:40px;background:var(--forest-dim);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+.vc-body h3{font-size:14px;font-weight:600;color:var(--ink);letter-spacing:-.01em;margin-bottom:5px}
+.vc-body p{font-size:13px;line-height:1.65;color:var(--muted);letter-spacing:-.01em}
+.vc-tag{display:inline-block;margin-top:8px;padding:2px 8px;background:var(--gold-dim);border:1px solid rgba(184,138,68,.2);border-radius:100px;font-size:10px;font-weight:600;color:var(--gold);letter-spacing:.04em;text-transform:uppercase}
+
+/* ── HOW WE WORK TOGETHER ── */
+.process-section{background:var(--sand)}
+.process-lead{font-size:15px;line-height:1.78;color:var(--muted);max-width:540px;margin-bottom:36px;letter-spacing:-.01em}
+.process-steps{display:flex;flex-direction:column;gap:0}
+.pstep{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(30,35,32,.07);position:relative}
+.pstep:last-child{border-bottom:none}
+.ps-num-wrap{display:flex;flex-direction:column;align-items:center;gap:0;flex-shrink:0;width:40px}
+.ps-num{width:36px;height:36px;background:var(--forest);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:15px;font-weight:700;color:#fff;flex-shrink:0}
+.ps-connector{width:1px;flex:1;min-height:20px;background:linear-gradient(var(--forest),transparent);margin-top:6px;opacity:.2}
+.pstep:last-child .ps-connector{display:none}
+.ps-body{padding-top:4px}
+.ps-body h3{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:5px;letter-spacing:-.01em}
+.ps-body p{font-size:13px;line-height:1.65;color:var(--muted);letter-spacing:-.01em}
+.ps-time{display:inline-flex;align-items:center;gap:5px;margin-top:9px;padding:3px 10px;background:rgba(47,93,80,.08);border:1px solid rgba(47,93,80,.15);border-radius:100px;font-size:10px;font-weight:600;color:var(--forest);letter-spacing:.04em;text-transform:uppercase}
+
+/* ── FEASIBILITY REPORT ── */
+.report-section{background:var(--bone)}
+.report-card{background:var(--ink);border-radius:12px;padding:28px;overflow:hidden;position:relative}
+.report-card::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(47,93,80,.3) 0%,transparent 65%);pointer-events:none}
+.rc-label{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:16px;display:flex;align-items:center;gap:8px;opacity:.8}
+.rc-label::before{content:'';width:16px;height:1px;background:var(--sage);opacity:.5}
+.report-card h3{font-family:'Fraunces',serif;font-size:clamp(22px,5vw,30px);font-weight:700;color:#fff;letter-spacing:-.02em;line-height:1.15;margin-bottom:14px}
+.report-card h3 em{color:var(--gold);font-style:normal}
+.report-card p{font-size:14px;line-height:1.75;color:rgba(255,255,255,.5);letter-spacing:-.01em;margin-bottom:24px}
+.report-includes{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.ri-item{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,.65);letter-spacing:-.01em;line-height:1.5}
+.ri-check{color:var(--sage);flex-shrink:0;margin-top:1px;font-weight:700}
+.btn-report{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;background:var(--gold);color:#fff;font-size:14px;font-weight:600;letter-spacing:-.01em;border-radius:8px;box-shadow:0 2px 10px rgba(184,138,68,.3);transition:all .18s;width:100%}
+.btn-report:hover{background:#c9993a;transform:translateY(-1px)}
+
+/* ── OBJECTIONS / FAQ ── */
+.faq-section{background:var(--sand)}
+.faq-list{margin-top:28px;display:flex;flex-direction:column;gap:2px}
+.faq-item{background:#fff;border:1px solid var(--border);border-radius:2px;overflow:hidden}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;cursor:pointer;gap:12px;-webkit-tap-highlight-color:transparent}
+.faq-q-text{font-size:14px;font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.4}
+.faq-t{width:24px;height:24px;background:var(--forest-dim);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--forest);flex-shrink:0;transition:background .18s,transform .22s;font-weight:300}
+.faq-item.open .faq-t{background:var(--forest);color:#fff;transform:rotate(45deg)}
+.faq-a{display:none;padding:0 20px 18px;font-size:13px;line-height:1.72;color:var(--muted);letter-spacing:-.01em;border-top:1px solid var(--border)}
+.faq-item.open .faq-a{display:block;padding-top:14px}
+
+/* ── INTAKE FORM ── */
+.intake-section{background:var(--bone);padding:56px 20px 100px}
+.intake-wrap{max-width:600px}
+.intake-intro{font-size:15px;line-height:1.78;color:var(--muted);margin-bottom:32px;letter-spacing:-.01em}
+.intake-intro strong{color:var(--ink);font-weight:500}
+
+.form-grid{display:flex;flex-direction:column;gap:12px}
+.f-row{display:flex;flex-direction:column;gap:12px}
+.f-field{display:flex;flex-direction:column;gap:5px}
+.f-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.f-label .req{color:var(--red);margin-left:2px}
+.f-input{width:100%;padding:13px 15px;background:#fff;border:1px solid var(--border);border-radius:8px;font-family:'Geist',sans-serif;font-size:15px;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;box-shadow:0 1px 3px rgba(30,35,32,.04)}
+.f-input::placeholder{color:rgba(107,122,112,.4)}
+.f-input:focus{border-color:var(--forest);box-shadow:0 0 0 3px rgba(47,93,80,.08)}
+.f-select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7a70' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+textarea.f-input{resize:vertical;min-height:90px;font-size:14px}
+
+/* Parcel info box */
+.parcel-box{background:var(--sand);border:1px solid rgba(216,203,184,.6);border-radius:8px;padding:18px;margin:4px 0 0}
+.parcel-box-label{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.parcel-box-label::before{content:'';width:12px;height:1px;background:var(--muted);opacity:.5}
+.parcel-box-grid{display:flex;flex-direction:column;gap:10px}
+
+.f-submit-pro{width:100%;padding:15px 24px;background:var(--forest);border-radius:8px;font-family:'Geist',sans-serif;font-size:15px;font-weight:600;letter-spacing:-.01em;color:#fff;box-shadow:0 2px 8px var(--forest-glow);transition:all .18s;margin-top:6px}
+.f-submit-pro:hover{background:var(--forest-mid);transform:translateY(-1px);box-shadow:0 6px 20px rgba(47,93,80,.28)}
+.f-submit-pro:active{transform:scale(.99)}
+.f-note-pro{font-size:12px;color:var(--muted);text-align:center;line-height:1.6;margin-top:10px;letter-spacing:-.01em}
+.f-note-pro a{color:var(--forest);text-decoration:underline;text-underline-offset:2px}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);padding:36px 20px 80px}
+.footer-top{display:flex;flex-direction:column;gap:28px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:18px}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.3);max-width:280px;line-height:1.65;margin-top:10px;letter-spacing:-.01em}
+.footer-col h5{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-bottom:10px;opacity:.75}
+.footer-col a{display:block;font-size:13px;color:rgba(255,255,255,.3);margin-bottom:8px;letter-spacing:-.01em;transition:color .15s}
+.footer-col a:hover{color:rgba(255,255,255,.65)}
+.footer-links-row{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.footer-bottom p{font-size:11px;color:rgba(255,255,255,.18);letter-spacing:-.01em;line-height:1.6}
+.footer-logo .logo-name{color:#fff}
+.footer-logo .logo-name span{color:var(--sage)}
+.back-to-main{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,.3);letter-spacing:-.01em;transition:color .15s}
+.back-to-main:hover{color:rgba(255,255,255,.6)}
+
+/* ── STICKY MOBILE ── */
+.sticky{position:fixed;bottom:0;left:0;right:0;background:var(--bone);border-top:1px solid var(--border);padding:10px 16px;z-index:400;box-shadow:0 -4px 20px rgba(30,35,32,.07)}
+.sticky a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;background:var(--forest);border-radius:8px;font-size:14px;font-weight:600;color:#fff;letter-spacing:-.01em;box-shadow:0 2px 8px var(--forest-glow)}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ── TABLET 640px+ ── */
+@media(min-width:640px){
+  section{padding:72px 36px}
+  .hero{padding:64px 36px 72px}
+  .hero-cta-row{flex-direction:row}
+  .btn-primary,.btn-secondary{width:auto}
+  .f-row{flex-direction:row}
+  .divider-inner{justify-content:space-evenly}
+  .value-grid{gap:2px}
+  .footer-top{flex-direction:row;flex-wrap:wrap}
+  .footer-links-row{grid-template-columns:repeat(3,1fr)}
+  .parcel-box-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .intake-section{padding:72px 36px 100px}
+  .btn-report{width:auto}
+}
+
+/* ── DESKTOP 1024px+ ── */
+@media(min-width:1024px){
+  header{padding:0 52px}
+  .header-phone{display:block}
+  .hero{padding:80px 72px 90px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:80px}
+  .hero-right-col{display:block}
+  h1{font-size:clamp(48px,5vw,66px)}
+  .hero-cta-row{flex-direction:row}
+  .btn-primary,.btn-secondary{width:auto}
+  section{padding:80px 72px}
+  .intake-section{padding:80px 72px 100px}
+  .value-grid{gap:3px}
+  .process-steps{max-width:680px}
+  .report-card{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+  .rc-right{padding-top:4px}
+  .intake-wrap{max-width:680px}
+  .f-row{flex-direction:row}
+}
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <a href="https://terraliftoffers.com" class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 32 32" fill="none">
+        <rect x="1" y="1" width="30" height="30" rx="7" stroke="#2F5D50" stroke-width="1.4" fill="rgba(47,93,80,0.06)"/>
+        <path d="M7 22 L16 10 L25 22" stroke="#2F5D50" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="24.5" r="1.8" fill="#B88A44"/>
+      </svg>
+    </div>
+    <span class="logo-name">Terra<span>Lift</span></span>
+    <span class="pro-badge">Pro</span>
+  </a>
+  <div class="header-right">
+    <a href="tel:+16267365504" class="header-phone">(626) 736-5504</a>
+    <a href="#intake" class="header-cta-sm">
+      Submit a Parcel
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero" aria-label="Professional Partners">
+  <div class="hero-left">
+    <div class="eyebrow" style="animation:fade-up .5s ease both">
+      <span class="eyebrow-line"></span>
+      <span class="eyebrow-text">For Estate &amp; Probate Counsel</span>
+    </div>
+
+    <h1>Your clients own land. <em>We give it a number.</em></h1>
+
+    <p class="hero-sub">
+      TerraLift provides estate attorneys and probate counsel with a <strong>complimentary Feasibility Report</strong> on vacant land assets — before any commitment, before any obligation. A useful data point for your clients, delivered in 48 hours.
+    </p>
+
+    <div class="hero-cta-row">
+      <a href="#intake" class="btn-primary">
+        Submit a Parcel
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="#how-it-works" class="btn-secondary">
+        How We Work Together
+      </a>
+    </div>
+
+    <div class="credibility-strip">
+      <span class="cred-item">
+        <svg class="cred-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        48-hr report
+      </span>
+      <span class="cred-dot"></span>
+      <span class="cred-item">No cost, no obligation</span>
+      <span class="cred-dot"></span>
+      <span class="cred-item">No pressure on your client</span>
+    </div>
+  </div>
+
+  <!-- Right col — decorative card (desktop) -->
+  <div class="hero-right-col" style="display:none">
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:28px;box-shadow:0 4px 32px rgba(30,35,32,.07)">
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;display:flex;align-items:center;gap:8px">
+        <span style="width:12px;height:1px;background:var(--muted);opacity:.5;display:block"></span>
+        Sample Feasibility Report
+      </div>
+      <div style="background:var(--bone);border-radius:8px;padding:16px;margin-bottom:12px">
+        <div style="font-size:11px;color:var(--muted);margin-bottom:4px">Assessed Value Range</div>
+        <div style="font-family:'Fraunces',serif;font-size:28px;font-weight:700;color:var(--ink);letter-spacing:-.02em">$38,000 – $47,000</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px">Based on comparable sales · Pinal Co, AZ</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:var(--forest-dim);border-radius:6px">
+          <span style="font-size:12px;color:var(--muted)">Marketability</span>
+          <span style="font-size:12px;font-weight:600;color:var(--forest)">Moderate-High</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:var(--forest-dim);border-radius:6px">
+          <span style="font-size:12px;color:var(--muted)">Back Taxes</span>
+          <span style="font-size:12px;font-weight:600;color:var(--ink)">Absorbable</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:var(--forest-dim);border-radius:6px">
+          <span style="font-size:12px;color:var(--muted)">Est. Close Timeline</span>
+          <span style="font-size:12px;font-weight:600;color:var(--ink)">14–21 days</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:var(--gold-dim);border:1px solid rgba(184,138,68,.2);border-radius:6px">
+          <span style="font-size:12px;font-weight:600;color:var(--ink)">TerraLift Offer</span>
+          <span style="font-size:13px;font-weight:700;color:var(--gold)">$41,500 cash</span>
+        </div>
+      </div>
+      <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);text-align:center;letter-spacing:-.01em">Delivered within 48 hours of parcel submission · No obligation</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIVIDER BAND ── -->
+<div class="divider-band">
+  <div class="divider-inner">
+    <div class="divider-item"><em class="di-val">48 hrs</em><span>to a written assessment</span></div>
+    <div class="di-sep"></div>
+    <div class="divider-item"><em class="di-val">$0</em><span>cost to you or your client</span></div>
+    <div class="di-sep"></div>
+    <div class="divider-item"><em class="di-val">All 50</em><span>states covered</span></div>
+    <div class="di-sep"></div>
+    <div class="divider-item"><em class="di-val">14–21</em><span>day close if accepted</span></div>
+  </div>
+</div>
+
+<!-- ── VALUE PROP ── -->
+<section class="value-section reveal" aria-labelledby="value-h2">
+  <div class="s-label">Why Partner with TerraLift</div>
+  <h2 id="value-h2">We help attorneys <em>close files,</em> not chase buyers.</h2>
+  <p class="value-intro">
+    Vacant land is the hardest asset class in an estate to liquidate. It doesn't sell at retail quickly, it accrues ongoing tax liability, and most buyers won't touch complicated title situations. <strong>We specialize in exactly that.</strong>
+  </p>
+
+  <div class="value-grid">
+    <div class="value-card reveal">
+      <div class="vc-icon">📋</div>
+      <div class="vc-body">
+        <h3>Feasibility Report — no strings attached</h3>
+        <p>Submit a parcel and we'll deliver a written market-based assessment within 48 hours. Your client gets a concrete data point for decision-making. No obligation, no pressure, no follow-up calls unless invited.</p>
+        <span class="vc-tag">New in 2025</span>
+      </div>
+    </div>
+    <div class="value-card reveal">
+      <div class="vc-icon">⚖️</div>
+      <div class="vc-body">
+        <h3>We navigate the complexity you're already managing</h3>
+        <p>Missing deeds, tangled title, probate proceedings, multiple heirs, back taxes — our team and title partners have closed all of it. We don't need a clean file to make an offer. We need a parcel number.</p>
+      </div>
+    </div>
+    <div class="value-card reveal">
+      <div class="vc-icon">🏦</div>
+      <div class="vc-body">
+        <h3>Cash buyer, not a listing arrangement</h3>
+        <p>There's no MLS listing, no waiting period, no deal falling apart because a retail buyer couldn't finance vacant land. We are the buyer. Your client knows exactly what they'll receive and when.</p>
+      </div>
+    </div>
+    <div class="value-card reveal">
+      <div class="vc-icon">🤝</div>
+      <div class="vc-body">
+        <h3>Designed to complement your counsel, not compete with it</h3>
+        <p>We never contact your client directly without your clearance. You own the relationship. We provide the liquidity assessment and close the transaction — everything else stays in your hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section class="process-section reveal" id="how-it-works" aria-labelledby="process-h2">
+  <div class="s-label">The Process</div>
+  <h2 id="process-h2">Four steps from <em>parcel submission</em> to closed file.</h2>
+  <p class="process-lead">
+    No phone tag. No extended timelines. The workflow is designed to fit inside your existing case management rhythm.
+  </p>
+
+  <div class="process-steps">
+    <div class="pstep reveal">
+      <div class="ps-num-wrap">
+        <div class="ps-num">1</div>
+        <div class="ps-connector"></div>
+      </div>
+      <div class="ps-body">
+        <h3>Submit the parcel via this portal</h3>
+        <p>Fill out the intake form below with the parcel details — APN, state, county, and a brief note on the estate situation. That's all we need to begin.</p>
+        <span class="ps-time">5 minutes</span>
+      </div>
+    </div>
+    <div class="pstep reveal">
+      <div class="ps-num-wrap">
+        <div class="ps-num">2</div>
+        <div class="ps-connector"></div>
+      </div>
+      <div class="ps-body">
+        <h3>We pull county data and run the assessment</h3>
+        <p>Our team researches comparable sales, tax status, access, and marketability for the specific parcel. We build a Feasibility Report — a written document you can present directly to your client.</p>
+        <span class="ps-time">Within 48 hours</span>
+      </div>
+    </div>
+    <div class="pstep reveal">
+      <div class="ps-num-wrap">
+        <div class="ps-num">3</div>
+        <div class="ps-connector"></div>
+      </div>
+      <div class="ps-body">
+        <h3>You present the report to your client</h3>
+        <p>The report includes an assessed value range, a cash offer from TerraLift, and a clear summary of the proposed transaction terms. Your client decides — no pressure, no timeline.</p>
+        <span class="ps-time">At your discretion</span>
+      </div>
+    </div>
+    <div class="pstep reveal">
+      <div class="ps-num-wrap">
+        <div class="ps-num">4</div>
+        <div class="ps-connector"></div>
+      </div>
+      <div class="ps-body">
+        <h3>If accepted, we close through a licensed title company</h3>
+        <p>The transaction closes in 14–21 days via a licensed title company. We absorb back taxes and closing costs. Your client receives the agreed cash amount, and the asset is off the estate ledger.</p>
+        <span class="ps-time">14–21 days to close</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEASIBILITY REPORT ── -->
+<section class="report-section reveal" aria-label="Feasibility Report">
+  <div class="s-label">The Deliverable</div>
+  <h2 style="margin-bottom:24px">What your client <em>actually receives.</em></h2>
+
+  <div class="report-card">
+    <div class="rc-left">
+      <div class="rc-label">TerraLift Feasibility Report</div>
+      <h3>A market-based <em>liquidity assessment</em> for non-performing land assets.</h3>
+      <p>The Feasibility Report is a written document — not a verbal estimate, not a vague range. It's something your client can read, consider, and act on. It also serves as a useful data point for estate valuation purposes.</p>
+      <a href="#intake" class="btn-report">
+        Request a Report
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="rc-right" style="margin-top:24px">
+      <div class="report-includes">
+        <div class="ri-item"><span class="ri-check">✓</span>Market-based assessed value range for the parcel</div>
+        <div class="ri-item"><span class="ri-check">✓</span>Written cash offer amount from TerraLift</div>
+        <div class="ri-item"><span class="ri-check">✓</span>Marketability rating and access/utility notes</div>
+        <div class="ri-item"><span class="ri-check">✓</span>Back tax status and absorption confirmation</div>
+        <div class="ri-item"><span class="ri-check">✓</span>Estimated close timeline and title process summary</div>
+        <div class="ri-item"><span class="ri-check">✓</span>No obligation language — client is free to decline</div>
+      </div>
+      <div style="padding:14px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-size:12px;color:rgba(255,255,255,.4);line-height:1.65;letter-spacing:-.01em">
+        The Feasibility Report is complimentary for verified legal professionals. There is no cost to you, no cost to your client, and no obligation to proceed.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ (Attorney-Specific) ── -->
+<section class="faq-section reveal" aria-label="Common Questions">
+  <div class="s-label">Common Questions</div>
+  <h2>What legal professionals <em>typically ask us.</em></h2>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Does TerraLift contact my client directly?</span>
+        <span class="faq-t">+</span>
+      </div>
+      <div class="faq-a">No. We deliver the Feasibility Report to you. How and when you present it to your client is entirely at your discretion. We don't reach out to parties in an estate without clearance from the attorney of record. If a direct conversation between our team and your client is needed, that happens at your invitation and with your coordination.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Does the Feasibility Report create any obligation for my client?</span>
+        <span class="faq-t">+</span>
+      </div>
+      <div class="faq-a">None. The report is informational. It tells your client what TerraLift would pay for the land and outlines the proposed transaction terms. Your client can review it, use it as a valuation data point for the estate, and decline with no follow-up from us unless requested.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">Can TerraLift buy land when probate is still open?</span>
+        <span class="faq-t">+</span>
+      </div>
+      <div class="faq-a">In many cases, yes. The specifics depend on the jurisdiction and the stage of proceedings, but we've closed transactions during open probate with proper court authorization. Our title partners have experience with these situations. Submit the parcel and we'll assess what's workable given the current case status.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">What if there are multiple heirs who need to agree?</span>
+        <span class="faq-t">+</span>
+      </div>
+      <div class="faq-a">We're familiar with multi-heir situations. The transaction requires agreement among all parties with ownership interest — we can't change that. But we can structure the offer clearly so you have a concrete number to present to each heir, and our title team can coordinate signatures across multiple parties. This is common in estate land transactions.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">How far below market value are your offers?</span>
+        <span class="faq-t">+</span>
+      </div>
+      <div class="faq-a">Vacant land is illiquid by nature — it typically takes 12–18 months to sell at retail even for desirable parcels, and most land listings expire without selling. Our offers reflect a discount for that certainty, speed, and assumption of carrying costs and title complexity. The Feasibility Report will show both an assessed value range and our specific offer, so your client can make an informed comparison. We aim for offers that are fair enough that the transaction makes sense for both parties.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <span class="faq-q-text">What if the deed is missing or title is unclear?</span>
+        <span class="faq-t">+</span>
+      </div>
+      <div class="faq-a">Submit the parcel. Missing deeds and unclear title are situations we work through regularly. Our title partners are experienced with estate conveyances, quiet title actions, and alternative documentation pathways. We'll assess what we can resolve and be transparent about what we can't. In some cases we may need to quote a conditional offer pending title resolution — but we won't leave you without an answer.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INTAKE FORM ── -->
+<section class="intake-section" id="intake" aria-label="Parcel Submission">
+  <div class="intake-wrap">
+    <div class="s-label">Submit a Parcel</div>
+    <h2>Request a <em>Feasibility Report.</em></h2>
+    <p class="intake-intro">
+      Fill out the form below. We'll research the parcel and send a written assessment to your email within 48 hours. <strong>No cost. No obligation.</strong> For urgent matters, call us directly at <a href="tel:+16267365504" style="color:var(--forest)">(626) 736-5504</a>.
+    </p>
+
+    <div class="form-grid" id="proForm">
+
+      <!-- Your info -->
+      <div style="font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px;margin-bottom:4px">
+        <span style="width:12px;height:1px;background:var(--muted);opacity:.5;display:block"></span>
+        Your Information
+      </div>
+
+      <div class="f-row">
+        <div class="f-field" style="flex:1">
+          <label class="f-label">First Name <span class="req">*</span></label>
+          <input class="f-input" type="text" placeholder="First" id="proFirst">
+        </div>
+        <div class="f-field" style="flex:1">
+          <label class="f-label">Last Name <span class="req">*</span></label>
+          <input class="f-input" type="text" placeholder="Last" id="proLast">
+        </div>
+      </div>
+
+      <div class="f-row">
+        <div class="f-field" style="flex:1">
+          <label class="f-label">Firm / Practice Name <span class="req">*</span></label>
+          <input class="f-input" type="text" placeholder="Law office or firm name" id="proFirm">
+        </div>
+        <div class="f-field" style="flex:1">
+          <label class="f-label">Your Role</label>
+          <select class="f-input f-select" id="proRole">
+            <option value="">Select…</option>
+            <option>Estate Attorney</option>
+            <option>Probate Attorney</option>
+            <option>Trust Officer</option>
+            <option>Paralegal</option>
+            <option>Financial Advisor</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="f-row">
+        <div class="f-field" style="flex:1">
+          <label class="f-label">Email <span class="req">*</span></label>
+          <input class="f-input" type="email" placeholder="you@firmname.com" id="proEmail">
+        </div>
+        <div class="f-field" style="flex:1">
+          <label class="f-label">Phone</label>
+          <input class="f-input" type="tel" placeholder="(___) ___-____" id="proPhone">
+        </div>
+      </div>
+
+      <!-- Parcel info -->
+      <div class="parcel-box">
+        <div class="parcel-box-label">Parcel Information</div>
+        <div class="parcel-box-grid">
+          <div class="f-field">
+            <label class="f-label">APN / Parcel Number <span class="req">*</span></label>
+            <input class="f-input" type="text" placeholder="e.g. 123-45-678" id="proApn">
+          </div>
+          <div class="f-field">
+            <label class="f-label">State <span class="req">*</span></label>
+            <select class="f-input f-select" id="proState">
+              <option value="">Select state…</option>
+              <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option>
+              <option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option>
+              <option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option>
+              <option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+              <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option>
+              <option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
+              <option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option>
+              <option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+              <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option>
+              <option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+            </select>
+          </div>
+          <div class="f-field">
+            <label class="f-label">County</label>
+            <input class="f-input" type="text" placeholder="e.g. Pinal County" id="proCounty">
+          </div>
+          <div class="f-field">
+            <label class="f-label">Approximate Acreage</label>
+            <input class="f-input" type="text" placeholder="e.g. 40 acres" id="proAcreage">
+          </div>
+        </div>
+      </div>
+
+      <!-- Estate context -->
+      <div class="f-field">
+        <label class="f-label">Estate / Case Context <span class="req">*</span></label>
+        <textarea class="f-input" id="proNotes" placeholder="Brief description of the estate situation — probate status, known title issues, number of heirs, back tax status, or anything relevant to the assessment. The more context you provide, the more useful the report will be."></textarea>
+      </div>
+
+      <div class="f-field">
+        <label class="f-label">How Did You Hear About TerraLift?</label>
+        <select class="f-input f-select" id="proSource">
+          <option value="">Select…</option>
+          <option>Colleague referral</option>
+          <option>Direct outreach from TerraLift</option>
+          <option>LinkedIn</option>
+          <option>Google search</option>
+          <option>Bar association</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <button class="f-submit-pro" id="proSubmit" type="button">
+        Request Feasibility Report →
+      </button>
+
+      <p class="f-note-pro">
+        We'll send the report to your email within 48 business hours. By submitting, you confirm you are a legal professional or their authorized representative. Questions? Call <a href="tel:+16267365504">(626) 736-5504</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="https://terraliftoffers.com" class="logo footer-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 32 32" fill="none">
+            <rect x="1" y="1" width="30" height="30" rx="7" stroke="#8FAE9D" stroke-width="1.2" fill="rgba(143,174,157,0.08)"/>
+            <path d="M7 22 L16 10 L25 22" stroke="#8FAE9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="24.5" r="1.8" fill="#B88A44"/>
+          </svg>
+        </div>
+        <span class="logo-name">Terra<span>Lift</span></span>
+      </a>
+      <p>Land liquidity solutions for estate and legal professionals. Nationwide. No fees, no obligations.</p>
+    </div>
+    <div class="footer-links-row">
+      <div class="footer-col">
+        <h5>This Portal</h5>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#intake">Submit a Parcel</a>
+        <a href="tel:+16267365504">(626) 736-5504</a>
+      </div>
+      <div class="footer-col">
+        <h5>TerraLift</h5>
+        <a href="https://terraliftoffers.com">Main Site</a>
+        <a href="https://terraliftoffers.com#faq">Seller FAQ</a>
+        <a href="mailto:offers@terralift.com">offers@terralift.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 TerraLift LLC · 30 N Gould St Ste R, Sheridan, WY 82801 · This page is for legal and professional referral partners.</p>
+    <p style="margin-top:6px"><a href="https://terraliftoffers.com" class="back-to-main">← Back to main site</a></p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky">
+  <a href="#intake">
+    Submit a Parcel — Free Report in 48 hrs
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+</div>
+
+<script>
+// FAQ toggle
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Scroll reveal
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.04 });
+
+document.querySelectorAll('.value-grid, .process-steps').forEach(g => {
+  Array.from(g.children).forEach((c, i) => { c.style.transitionDelay = i * 70 + 'ms'; });
+});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Show desktop right col
+if (window.innerWidth >= 1024) {
+  const rc = document.querySelector('.hero-right-col');
+  if (rc) rc.style.display = 'block';
+}
+window.addEventListener('resize', () => {
+  const rc = document.querySelector('.hero-right-col');
+  if (rc) rc.style.display = window.innerWidth >= 1024 ? 'block' : 'none';
+});
+
+// Phone format
+const phoneInput = document.getElementById('proPhone');
+if (phoneInput) {
+  phoneInput.addEventListener('input', function() {
+    let v = this.value.replace(/\D/g,'').slice(0,10);
+    if (v.length >= 7) v = '('+v.slice(0,3)+') '+v.slice(3,6)+'-'+v.slice(6);
+    else if (v.length >= 4) v = '('+v.slice(0,3)+') '+v.slice(3);
+    else if (v.length > 0) v = '('+v;
+    this.value = v;
+  });
+}
+
+// Form submission
+document.getElementById('proSubmit').addEventListener('click', async function() {
+  const first = document.getElementById('proFirst');
+  const last = document.getElementById('proLast');
+  const firm = document.getElementById('proFirm');
+  const email = document.getElementById('proEmail');
+  const apn = document.getElementById('proApn');
+  const state = document.getElementById('proState');
+  const notes = document.getElementById('proNotes');
+
+  let valid = true;
+  [first, last, firm, email, apn, state, notes].forEach(f => {
+    f.style.borderColor = '';
+    if (!f.value.trim()) { f.style.borderColor = '#c0674a'; valid = false; }
+  });
+  if (!valid) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+
+  this.textContent = 'Submitting…';
+  this.disabled = true;
+
+  try {
+    const res = await fetch('/.netlify/functions/submit-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: first.value.trim(),
+        lastName: last.value.trim(),
+        firm: firm.value.trim(),
+        role: document.getElementById('proRole').value,
+        email: email.value.trim(),
+        phone: document.getElementById('proPhone').value.trim(),
+        apn: apn.value.trim(),
+        state: state.value.trim(),
+        county: document.getElementById('proCounty').value.trim(),
+        acreage: document.getElementById('proAcreage').value.trim(),
+        message: notes.value.trim(),
+        referralSource: document.getElementById('proSource').value,
+        source: 'TerraLift Pro Portal — Attorney Referral',
+        tags: ['attorney-referral', 'feasibility-request', 'pro-portal']
+      })
+    });
+    if (!res.ok) throw new Error('failed');
+  } catch(e) {
+    this.textContent = 'Request Feasibility Report →';
+    this.disabled = false;
+    alert('Something went wrong. Please try again or call us at (626) 736-5504.');
+    return;
+  }
+
+  // Success state
+  document.getElementById('intake').innerHTML = `
+    <div style="max-width:540px;padding:40px 20px;text-align:center">
+      <div style="width:60px;height:60px;background:var(--forest-dim);border:1px solid var(--sage-border);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:24px">✓</div>
+      <h2 style="font-family:'Fraunces',serif;font-size:clamp(26px,6vw,36px);font-weight:700;color:var(--ink);letter-spacing:-.02em;margin-bottom:12px">Report requested.</h2>
+      <p style="font-size:15px;line-height:1.78;color:var(--muted);letter-spacing:-.01em;margin-bottom:28px">
+        We'll have a Feasibility Report in your inbox within 48 business hours. If there are any questions about the parcel or case situation, we'll reach out to you directly — not to your client.
+      </p>
+      <p style="font-size:13px;color:var(--muted);letter-spacing:-.01em">
+        Questions in the meantime? Call <a href="tel:+16267365504" style="color:var(--forest)">(626) 736-5504</a> or email <a href="mailto:offers@terralift.com" style="color:var(--forest)">offers@terralift.com</a>
+      </p>
+    </div>
+  `;
+});
+</script>
+</body>
+</html>
