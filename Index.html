@@ -43,7 +43,7 @@
   "alternateName": "TerraLift LLC",
   "description": "TerraLift is a nationwide cash land buyer. We make written cash offers on vacant land, rural acreage, inherited parcels, and tax-delinquent properties within 48 hours. Zero commissions, zero closing costs, close in 14 days.",
   "url": "https://terraliftoffers.com",
-  "telephone": "+12397882491",
+  "telephone": "+16267365504",
   "email": "offers@terralift.com",
   "address": {
     "@type": "PostalAddress",
@@ -202,22 +202,22 @@ header{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:
 /* ── HERO ── */
 .hero{padding:40px 20px 48px;background:var(--bone);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 90% 0%,rgba(47,93,80,.06) 0%,transparent 60%);pointer-events:none}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:20px;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:20px;animation:fade-up .5s ease both}
 .eyebrow-line{width:20px;height:1px;background:var(--forest);opacity:.6;flex-shrink:0}
 .eyebrow-text{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--forest)}
-h1{font-family:'Fraunces',serif;font-size:clamp(40px,10vw,60px);font-weight:700;line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin-bottom:16px;}
+h1{font-family:'Fraunces',serif;font-size:clamp(40px,10vw,60px);font-weight:700;line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin-bottom:16px;animation:fade-up .5s .07s ease both}
 h1 em{color:var(--forest)}
-.hero-sub{font-size:15px;line-height:1.75;color:var(--muted);margin-bottom:28px;letter-spacing:-.01em;}
+.hero-sub{font-size:15px;line-height:1.75;color:var(--muted);margin-bottom:28px;letter-spacing:-.01em;animation:fade-up .5s .14s ease both}
 .hero-sub strong{color:var(--ink);font-weight:500}
-.stat-strip{display:flex;margin-bottom:28px;border:1px solid var(--border);border-radius:8px;background:#fff;overflow:hidden;box-shadow:0 1px 4px rgba(30,35,32,.06);}
+.stat-strip{display:flex;margin-bottom:28px;border:1px solid var(--border);border-radius:8px;background:#fff;overflow:hidden;box-shadow:0 1px 4px rgba(30,35,32,.06);animation:fade-up .5s .21s ease both}
 .sstat{flex:1;padding:12px 10px;border-right:1px solid var(--border);text-align:center}
 .sstat:last-child{border-right:none}
 .sstat .v{font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:var(--ink);display:block;line-height:1;letter-spacing:-.02em}
 .sstat .l{font-size:10px;font-weight:500;color:var(--muted);margin-top:3px;display:block}
-.btn-main{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:16px 24px;background:var(--forest);color:#fff;font-size:15px;font-weight:600;letter-spacing:-.01em;border-radius:8px;box-shadow:0 2px 10px var(--forest-glow);transition:all .15s;;-webkit-tap-highlight-color:transparent}
+.btn-main{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:16px 24px;background:var(--forest);color:#fff;font-size:15px;font-weight:600;letter-spacing:-.01em;border-radius:8px;box-shadow:0 2px 10px var(--forest-glow);transition:all .15s;animation:fade-up .5s .28s ease both;-webkit-tap-highlight-color:transparent}
 .btn-main:active{background:var(--forest-mid);transform:scale(.99)}
 .btn-main svg{flex-shrink:0}
-.trust-notes{display:flex;flex-direction:column;gap:6px;margin-top:14px;}
+.trust-notes{display:flex;flex-direction:column;gap:6px;margin-top:14px;animation:fade-up .5s .35s ease both}
 .trust-note{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:7px;letter-spacing:-.01em}
 .trust-note::before{content:'✓';color:var(--forest);font-size:12px;font-weight:700;flex-shrink:0}
 .hero-right{display:none}
@@ -400,8 +400,8 @@ footer{background:var(--ink);padding:40px 20px 100px}
 .sticky a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;background:var(--forest);border-radius:8px;font-size:14px;font-weight:600;color:#fff;letter-spacing:-.01em;box-shadow:0 2px 8px var(--forest-glow);-webkit-tap-highlight-color:transparent}
 
 /* ── REVEAL ── */
-.reveal{opacity:1;transform:none}
-
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in,.reveal.visible{opacity:1;transform:translateY(0)}
 
 /* ══════════════════════════════
    TABLET  640px+
@@ -884,12 +884,12 @@ footer{background:var(--ink);padding:40px 20px 100px}
   <div class="contact-strip reveal">
     <div class="cs-item">
       <span class="cs-label">Call or Text</span>
-      <a href="tel:+12397882491" class="cs-value">(239) 788-2491</a>
+      <a href="tel:+16267365504" class="cs-value">(626) 736-5504</a>
     </div>
     <div class="cs-div"></div>
     <div class="cs-item">
       <span class="cs-label">Email Us</span>
-      <a href="mailto:offers@terralift.com" class="cs-value">offers@terralift.com</a>
+      <a href="/cdn-cgi/l/email-protection#422d24242730310236273030232e2b24366c212d2f" class="cs-value"><span class="__cf_email__" data-cfemail="87e8e1e1e2f5f4c7f3e2f5f5e6ebeee1f3a9e4e8ea">[email&#160;protected]</span></a>
     </div>
     <div class="cs-div"></div>
     <div class="cs-item">
@@ -1090,14 +1090,24 @@ footer{background:var(--ink);padding:40px 20px 100px}
 
       <div class="footer-col">
         <h5>Contact</h5>
-        <a href="tel:+12397882491">(239) 788-2491</a>
-        <a href="mailto:offers@terralift.com">offers@terralift.com</a>
+        <a href="tel:+16267365504">(626) 736-5504</a>
+        <a href="/cdn-cgi/l/email-protection#38575e5e5d4a4b784c5d4a4a5954515e4c165b5755"><span class="__cf_email__" data-cfemail="d7b8b1b1b2a5a497a3b2a5a5b6bbbeb1a3f9b4b8ba">[email&#160;protected]</span></a>
         <a href="#offer">Submit Your Property</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Legal Professionals</h5>
+        <a href="/pro" style="display:flex;align-items:center;gap:6px;color:rgba(184,138,68,.6);transition:color .15s" onmouseover="this.style.color='#B88A44'" onmouseout="this.style.color='rgba(184,138,68,.6)'">
+          Attorney Resource Portal
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:.6;flex-shrink:0"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="/pro#intake">Request a Feasibility Report</a>
+        <a href="/pro#how-it-works">How We Work with Firms</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2026 TerraLift LLC. All rights reserved. · 30 N Gould St Ste R, Sheridan, WY 82801 · <a href="mailto:offers@terralift.com" style="color:rgba(255,255,255,.35);text-decoration:none;">offers@terralift.com</a> · (239) 788-2491</p>
+    <p>© 2026 TerraLift LLC. All rights reserved. · 30 N Gould St Ste R, Sheridan, WY 82801 · <a href="/cdn-cgi/l/email-protection#68070e0e0d1a1b281c0d1a1a0904010e1c460b0705" style="color:rgba(255,255,255,.35);text-decoration:none;"><span class="__cf_email__" data-cfemail="036c65656671704377667171626f6a65772d606c6e">[email&#160;protected]</span></a> · (626) 736-5504</p>
     <p><a href="/privacy.html" style="color:rgba(255,255,255,.35);text-decoration:none;">Privacy Policy</a> · <a href="/terms.html" style="color:rgba(255,255,255,.35);text-decoration:none;">Terms of Service</a></p>
   </div>
 </footer>
@@ -1133,7 +1143,7 @@ footer{background:var(--ink);padding:40px 20px 100px}
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+  }, { threshold: 0.04, rootMargin: '0px 0px 0px 0px' });
 
   // Stagger grid children
   document.querySelectorAll('.features-grid, .t-grid, .how-grid, .pain-list, .trust-pillars, .states-grid').forEach(g => {
@@ -1201,7 +1211,7 @@ footer{background:var(--ink);padding:40px 20px 100px}
       } catch(e) {
         submitBtn.textContent = 'Get My Free Cash Offer →';
         submitBtn.disabled = false;
-        alert('Something went wrong — please try again or call us at (239) 788-2491.');
+        alert('Something went wrong — please try again or call us at (626) 736-5504.');
         return;
       }
 
