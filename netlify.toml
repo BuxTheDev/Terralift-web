@@ -1,2 +1,72 @@
 [build]
   functions = "netlify/functions"
+
+# ───────── Pretty URLs ─────────
+# Allow /sell-land-florida to serve sell-land-florida.html (200 = rewrite, no client redirect)
+[[redirects]]
+  from = "/sell-land-florida"
+  to   = "/sell-land-florida.html"
+  status = 200
+
+# 301 the .html version to the clean URL so we never have duplicate-content
+[[redirects]]
+  from = "/sell-land-florida.html"
+  to   = "/sell-land-florida"
+  status = 301
+  force  = true
+
+# Legacy .html paths from old footer links → directory pages
+[[redirects]]
+  from = "/privacy.html"
+  to   = "/privacy/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/terms.html"
+  to   = "/terms/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/index.html"
+  to   = "/"
+  status = 301
+  force  = true
+
+# ───────── Security headers ─────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options       = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+# ───────── Long-cache static assets ─────────
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# HTML — short cache so updates propagate quickly
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

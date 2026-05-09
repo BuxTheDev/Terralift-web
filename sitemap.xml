@@ -7,7 +7,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://terraliftoffers.com/</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,91 +15,51 @@
   <!-- State landing pages -->
   <url>
     <loc>https://terraliftoffers.com/sell-land-florida</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Contact -->
   <url>
-    <loc>https://terraliftoffers.com/contact</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://terraliftoffers.com/contact/</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Legal -->
   <url>
-    <loc>https://terraliftoffers.com/privacy</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://terraliftoffers.com/privacy/</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://terraliftoffers.com/terms</loc>
-    <lastmod>2026-04-11</lastmod>
+    <loc>https://terraliftoffers.com/terms/</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!--
+    /pro is intentionally excluded — it carries `noindex, nofollow`.
+
     ADD AS YOU BUILD:
 
     State pages (priority 0.9):
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-texas</loc>
-      <lastmod>2026-04-11</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.9</priority>
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-north-carolina</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-arkansas</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-arizona</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-new-mexico</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-colorado</loc>
-      ...
-    </url>
+      /sell-land-texas, /sell-land-north-carolina, /sell-land-arkansas,
+      /sell-land-arizona, /sell-land-new-mexico, /sell-land-colorado
 
     Florida county pages (priority 0.8):
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-lee-county-florida</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-charlotte-county-florida</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/sell-land-brevard-county-florida</loc>
-      ...
-    </url>
+      /sell-land-lee-county-florida,
+      /sell-land-charlotte-county-florida,
+      /sell-land-brevard-county-florida
 
     Blog articles (priority 0.7):
-    <url>
-      <loc>https://terraliftoffers.com/blog/how-to-sell-inherited-land-florida</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/blog/sell-land-with-back-taxes</loc>
-      ...
-    </url>
-    <url>
-      <loc>https://terraliftoffers.com/blog/sell-landlocked-land</loc>
-      ...
-    </url>
+      /blog/how-to-sell-inherited-land-florida
+      /blog/sell-land-with-back-taxes
+      /blog/sell-landlocked-land
   -->
 
 </urlset>
